@@ -1,0 +1,14 @@
+@media (min-width:1024px) and (max-width:1199px){
+  
+    
+    .thumb_sec div.sale{
+        position: absolute;
+        bottom:117%;
+        right:5px;
+    }
+    .mobile_menu,
+    .panel-overlay{
+        display: none;
+    }
+    
+}

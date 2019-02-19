@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <link rel="stylesheet" href="menu.css">
+     <link rel="stylesheet" href= "menu.css">
+     <link rel="stylesheet" href= "menu2.css">
+    <link rel="stylesheet" href="best_css.css">
     <link rel="stylesheet" href="login_modal.css">
     <link rel="stylesheet" href="ham_css.css">
     <link rel="stylesheet" href="mini_menu.css">
@@ -13,623 +15,81 @@
     <link rel="stylesheet" media="(min-width:481px) and (max-width:767px)" href="width481_767.css" />
     <link rel="stylesheet" media="(min-width:768px) and (max-width:1023px)" href="width768_1023.css" />
     <link rel="stylesheet" media="(min-width:1024px) and (max-width:1199px)" href="width1024_1199.css" />
-
     <script src="goods_script.js"></script>
     <script src="mobile_menu.js"></script>
-    
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">   
-    <link rel="stylesheet icon" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <title>NIKE Sports</title>
-
+    <title>NIKE │ Best Women's Wear</title>
     <style>
-   
-        .slide_box{
-            position: relative;
-            width:100%;
-            height:725px;
-            overflow: hidden;
-            left:0;
-            top:0;
-         
-            transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);          
-            background-attachment: fixed;
-            
-        }
-     
-        .slide{
-            position: absolute;
-            left:100%;
-            top:0;
-            width:100%;
-            height:100%;
-            background-attachment: fixed;
-        }
-        .slide.img1{background:url('img/header_slide1.png') no-repeat ;
-        background-attachment: fixed;}
-        .slide.img2{background:url('img/header_slide2.png') no-repeat ;
-        background-attachment: fixed;}
-        .slide.img3{background:url('img/header_slide3.png') no-repeat ;
-        background-attachment: fixed;}
-        .slide.img4{background:url('img/header_slide4.png') no-repeat ;
-        background-attachment: fixed;}
       
-        .btn_slide{
-            position: absolute;
-            width:300px;
-            height:100%;
-            z-index: 2;
-            font-size:100px;
-            color:#fff;
+        
+       .topimg1,
+       .topimg2,
+       .watch_wrap,
+       .bra_wrap{
+            width:100%;
+            position: relative;
         }
-        .btn_slide >span{
-            position: absolute;
-            left:50%;
-            top:50%;
-            transform: translate(-50%,-50%);
-            cursor: pointer;
-            
-        }
-        #btn_left{
-            left:0;
-            top:0;
-        }
-        #btn_right{
-            right: 0;
-            top:0;
-        }
-    /* ------------------------------------------------------- */
-        .content{
-            background:url('img/behind.png') no-repeat center;
-            background-attachment: fixed;
-        }
-        .only_font{
-            line-height: 322px;
-            text-align: center;
-        }
-        .only_font > p{
-            min-width:586px;
-            color:#fff;
-            letter-spacing: 25px;
-            font-size: 18px;
-        }
-    
-        .new_release{
-            text-align: center;
-            padding:48px 0 48px 0;
-            background:#c4c4c4;
-        }
-        .new_release a{
-            text-decoration: none;
-        }
-        .new_release > p{
-            font-size:4em;
-            font-weight: bold;
-        }
-
-        .re_img img,
-        .last_img img{
+        .topimg1 img,
+        .topimg2 img,
+        .etc_sec_wrap img{
             max-width: 100%; 
             width /***/: auto; /* IE8 */
             height: auto;
-            vertical-align: bottom;
-        }
-        
-        .release_img1, .release_img1-2{
-            position: relative;
-        }
-        .fix1200{
-            position: absolute;
-            top:50%;
-            left:19%;
-        }
-        .showmore2{
-            width:150px;
-            height:40px;
-            background-color: #000;
-            border:none;
-            border-radius:1px;
-            color:#fff;
-            padding:10px 15px;
-            box-sizing: border-box;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            
-            margin-bottom:15px;
-            cursor: pointer;
-          
-            transition:all .3s ease;
-        
-            position: absolute;
-            top:50%;
-            left:30%;
-        }
-        .sbtn_3{
-            margin-top:50px;
-        }
-        .sbtn_4{
-            margin-top:50px;
-        }
-        .showmore2:hover{
-            background-color:#fff;
-            color:#000;
-            border:1px solid;
-            box-sizing: border-box;
-        }
-      
-        /* --------------------------------------- */
-        .img23_box{
-            text-align: center;
-        }
-        .img23_boxwrap1,
-        .img23_boxwrap2{
-            display: inline-block;
-            margin-top:32px;
-            transition:all .35s;
-        }
-        .img23_boxwrap2{
-            margin-left:20px;
-        }
-        .release_img2,.release_img3{
-            overflow: hidden;
-            
-        }
-        .re_img1{
-            background:url('img/release_img1.png') no-repeat;
-            width:670px;
-            height:402px;
-            transition:all .35s;
-
-        }
-        .re_img2{
-            background:url('img/release_img2.png') no-repeat;
-            width:670px;
-            height:402px;
-            transition:all .35s;
-        }
-        .release_img2:hover .re_img1{
-            transform: scale(1.1);
-        }
-        .release_img2:hover .release_img2{
-            transform: scale(0.8);
-        }
-        .release_img3:hover .re_img2{
-            transform: scale(1.1);
-        }
-
-        .na_title{
-            font-size: 30px;
-            font-weight: bold;
-            margin-top:30px;
-        }
-        .na_title p:nth-child(2){
-            margin-top:30px;
-        }
-        .showmore{
-            width:280px;
-            height:80px;
-            background-color: #000;
-            border:none;
-            border-radius: 1px;
-            color:#fff;
-            padding:10px 15px;
-            box-sizing: border-box;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1.875em;
-            
-            cursor: pointer;
-            margin-top:25px;
-            transition:all .3s ease;
-        }
-        .showmore:hover{
-            background-color:#fff;
-            color:#000;
-            border:1px solid;
-            box-sizing: border-box;
-        }
-        .three_img{   
-            padding:30px 0 50px;
-            box-sizing: border-box;
-            text-align: center;
-            background:#232323;
-        }
-        .img3-1{background:url('img/men.png');}
-        .img3-2{background:url('img/women.png');}
-        .img3-3{background:url('img/kid.png');}
-
-        .three_img > p{
-            font-size:50px;
-            font-weight: bold;
-            color:#fff;
-        }
-        .three_img > p:first-child{
-            font-size:40px;
-            margin-bottom:-15px;
-        }
-        .img3_boxwrap{
-            width:331px;
-            height:438px;
-            display: inline-block;
-            margin-top:24px;
-            padding:0 20px 0;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
-        
-        .img3s{
-            width:100%;
-            height:100%; 
-            position: relative;
-        }
-        .img3_boxwrap:last-child{
-            margin-right: 0;
-        }
-        .boxwrap_p{
-            position: absolute;
-            width:100%;
-            height:160px;
-            background:rgba(0,0,0,0.5);
-            bottom:0;
-            color:#fff;
-            font-size:30px;
-            font-weight: bold;
-        }
-        .boxwrap_p > p{
-            margin-top:20px;
-        }
-       
-       
-        .collection_btn{
-            width:120px;
-            height:50px;
-            background-color: #000;
-            border: 1px solid rgba(255,255,255,.5);
-            border-radius: 2px;
-            color:#fff;
-            padding:5px 10px;
-            box-sizing: border-box;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top:10px;
-            transition:all .3s ease;
-        }
-        .collection_btn:hover{
-            background-color:#fff;
-            color:#000;
-            border:none;
-            box-sizing: border-box;
-        }
-        /* -------------------------------------------------------------- */
-        .best_seller{
-            padding:50px;
-            box-sizing: border-box;
-             text-align: center;
-             background:url('img/bestseller_back.png') no-repeat;
-        }
-
-        .best_seller > p{
-            font-size:50px;
-            font-weight: bold;
-            color:#fff;
-        }
-        .best_seller> p.arrival{
-            font-size:25px;
-            margin-bottom:25px;
-        }
-        .bestsell_btn{
-            position: absolute;
-            width:80px;
-            height:100%;
-            font-size:2em;
-            font-weight:800;
-        }
-        .bestsell_btn >span{
-            position: absolute;
-            left:50%;
-            top:50%;
-            transform: translate(-50%,-50%);
-            cursor: pointer;
-            width:50px;
-            height:50px;
-            background:rgba(0,0,0,0.2);
-            color:#fff;
-            transition:all .3s linear;
-        }
-    
-        .bestsell_btn >span:hover{
-            background:rgba(0,0,0,0.5);
-        }
-        #btn_left2{
-            left:-5px;
-            top:0;
-            text-align: left;
-        }
-        #btn_right2{
-            right: 1px;
-            top:0;
-            text-align: right;
-        }
-       .bestsell_box{
-           width:1000px;
-           height:236px;
-           margin:0 auto ;         
-           overflow: hidden;
-           box-sizing: border-box;
-           position: relative;
-       }
-       .slide_section{
-           position: absolute;
-           left:100%;
-           top:0;
-           width:100%;
-           height:100%;
-       }
-       .goods , .goods2, .goods3{
-           width:236px;
-           height:236px;
-           float:left;
-           margin:0 10px 0 10px;
-       }
-       .goods:last-child, .goods2:last-child,.goods3:last-child{
-           margin: 0 0 0 10px;
-       }
-       
-       .goods.Gimg1{background:url('img/1-1.png') no-repeat; }
-       .goods.Gimg2{background:url('img/1-2.png') no-repeat;}
-       .goods.Gimg3{background:url('img/1-3.png') no-repeat;}
-       .goods.Gimg4{background:url('img/1-4.png') no-repeat;}
-       .goods2.Gimg1{background:url('img/2-1.png') no-repeat;}
-       .goods2.Gimg2{background:url('img/2-2.png') no-repeat;}
-       .goods2.Gimg3{background:url('img/2-3.png') no-repeat;}
-       .goods2.Gimg4{background:url('img/2-4.png') no-repeat;}
-       .goods3.Gimg1{background:url('img/3-1.png') no-repeat;}
-       .goods3.Gimg2{background:url('img/3-2.png') no-repeat;}
-       .goods3.Gimg3{background:url('img/3-3.png') no-repeat;}
-       .goods3.Gimg4{background:url('img/3-4.png') no-repeat;}
-
-       .banner_img {
-            text-align: center;
-            padding:50px;
-            margin-bottom:112px;
-            background:linear-gradient(to bottom, #303030 10%, transparent);
-            box-sizing: border-box;
-        }
-   
-        .banner{  
-            display: inline-block;
-            padding:10px;
-            margin-bottom:20px;
-            position: relative;    
         } 
-        .find_store{
-            width:292px;
-            height:416px;
-            background:url('img/last_off.jpg') no-repeat;
-            transition:all .3s; 
+        /* .watch_wrap img,
+        .bra_wrap img, */
+        .topimg1 > .bestsell_btn { 
+            right:7%;
+            bottom:20%;
+            border: none;
         }
-        .banner:hover  .find_store{
-            background:url('img/last_on.jpg') no-repeat;
-        }
-        .see_nrc_club{
-            width:292px;
-            height:416px;
-            background:url('img/last2_off.jpg') no-repeat;
-            transition:all .3s; 
-        }
-        .banner:hover  .see_nrc_club{
-            background:url('img/last2_on.jpg') no-repeat;
-        }
-        .last_btn{
-            width:120px;
-            height:50px;
-            background-color: #000;
-            border:1px solid #fff;
-            border-radius: 2px;
+        .topimg2 > .bestsell_btn {
+            background:#000;
             color:#fff;
-            padding:5px 10px;
-            box-sizing: border-box;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 12px;
-            font-weight: bold;
-            cursor: pointer;
-           
-
-            transition:all .3s ease;
+            right:8%;
+            bottom:23%;
+            border:none;
             position: absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-           
         }
-        .banner:hover .last_btn{
-             background-color:#fff;
-            border: 1px solid #000;
-            color:#000;
-            box-sizing: border-box;
+        .etc_sec{
+            max-width: 50%; 
+            overflow: hidden;
         }
-        
-        
-        
-        @media (min-width:1024px) and (max-width:1199px){
     
-            .slide.img2{background:url('img/header_slide2.png') 20% 0 no-repeat ;
-            background-attachment: fixed;}
-            .slide.img3{background:url('img/header_slide3.png') 50% 0 no-repeat ;
-            background-attachment: fixed;}
-     
+        .etc_box1{
+            height:100%;
+            background:url('img/women_best/brand.png') no-repeat;    
+            transition: all .3s;
         }
-        @media (min-width:768px) and (max-width:1023px){
-            .slide_box{
-                height:350px;
-            }
-            .btn_slide{
-               width:10%;
-               font-size:70px;
-           }
-           
+        .etc_box2{
+            height:100%;
+            background:url('img/women_best/item.png') no-repeat;
+            transition: all .3s;
         }
-        @media (min-width:481px) and (max-width:767px){
-            .slide_box{
-                margin-top:100px;
-                height:350px;
-            }
-            .btn_slide{
-               width:10%;
-               font-size:70px;
-           }
-           .showmore2{
-               display: none;
-           }
-           .slide_section{
-               margin-left:23px;
-           }
-           .only_font{
-               line-height: 110px;
-           }
-           .only_font > p{
-               min-width: auto;
-               letter-spacing: 12px;
-           }
-           
-           .bestsell_box{
-               width:auto;
-           }
-           .banner_img{
-               padding:0;
-               margin-bottom: 0;
-           }
-           .banner{
-               width:50%;
-               padding:0;
-               float:left;
-           }
-           .find_store,
-           .see_nrc_club{
-               height:200px;
-           }
-           .last_btn{
-               font-weight: normal;
-           }
+       
+        .bra_wrap > .bestsell_btn{
+            position: absolute;
+            background:#000;
+            color:#fff;
+            bottom:30%;
+            left:10%;
+            border:none;
         }
-        @media (max-width:480px){
-            .slide_box{
-                margin-top:100px;
-                height:256px;
-            }
-            .btn_slide{
-               width:10%;
-               font-size:70px;
-           }
-           .only_font{
-               line-height: 110px;
-           }
-           .only_font > p{
-               min-width: auto;
-               text-align: center;
-               letter-spacing: 8px;
-           }
-
-           .img3_boxwrap{
-               width:30%;
-               height:268px;
-               padding:0 10px 0;
-           }
-           .img3-1,
-           .img3-2,
-           .img3-3{
-               background-size: cover;
-               background-position: center;
-           }
-           .boxwrap_p{
-               height:112px;
-               font-size:16px;
-           }
-           .boxwrap_p > p{
-               margin-top:20px;
-           }
-           .collection_btn{
-               width:auto;
-               height: auto;
-               font-size: 13px;
-               font-weight: normal;
-           }
-           .showmore2{
-               display: none;
-           }
-           .img23_box{
-               padding:28px;
-           }
-           .img23_boxwrap1,
-           .img23_boxwrap2{
-               display: block;
-               font-size:0.875em;
-           }
-           .release_img1,
-           .release_img1-2{
-               height: 150px;
-           }
-           .re_img img{
-               transform: scale(1.5);
-           }
-           .re_img1,
-           .re_img2{
-               height:335px;
-           }
-           .na_title{
-               font-size:1.5em;
-           }
-            .slide_section{
-               margin-left:25px;
-           }
-           .bestsell_box{
-               width:auto;
-           }
-         
-           .bestsell_btn > span{
-               color:#000;
-               height:auto;
-               background:transparent;
-           }
-           .banner_img{
-               padding:0;
-               margin-bottom: 0;
-           }
-           .best_seller > p{
-               font-size:2em;
-           }
-           .best_seller> p.arrival{
-               font-size:0.875em;
-               font-weight: normal;
-           }
-           .banner{
-               width:50%;
-               padding:0;
-               float:left;
-           }
-           .find_store,
-           .see_nrc_club{
-               height:200px;
-           }
-           .last_btn{
-               font-weight: normal;
-           }
-           .news_letter{
-               line-height: 50%;
-           }
-
-           
+       
+        .watch_wrap > .watch_view{
+            width:200px;
+            height:40px;
+            background:#fff;
+            color:#393939;
+            border:1px solid;
+            border-radius: 3px;
+            position: absolute;
+            font-size: 14px;
+            top:7%;
+            right:15%;
         }
+        
     </style>
-
 </head>
 <body>
         <div id="myModal" class="loginmodal">
@@ -776,12 +236,11 @@
                                         <li><a href="men_best.html">ACG</a></li>
                                     </ul>
                                 </li>
-                                <li class="sub_li menu_img">
-                                    <a href="women_best.html">
-                                        <img src="img/women_img.png" alt="">
-                                    </a>
+                                <li class="sub_li menu_img"><a href="women_best.html">
+                                    <img src="img/women_img.png" alt=""></a>
                                     <p>높아진 중창과 낮아진 발목라인</p>
-                                    <p>에어 포스1 세이지 로우</p> 
+                                    <p>에어 포스1 세이지 로우</p>
+                                
                                 </li>
                             </ul>
                             </div>
@@ -945,7 +404,6 @@
                         <span></span>
                         <span></span>
                     </div>
-                </div>
                 
                 </nav>
             </header>
@@ -1025,170 +483,252 @@
             
         </div>
         <div class="panel-overlay"></div>   
-        <div class="slide_box">
-            <div id="btn_left" class="btn_slide">
-                <span>〈</span>
-            </div>
-            <div id="btn_right" class="btn_slide">
-                <span>〉</span>
-            </div>
-
-            <div class="slide_img">
-                <div class="slide img1"></div>
-                <div class="slide img2"></div>
-                <div class="slide img3"></div>
-                <div class="slide img4"></div>
-            </div>
-
-            <div class="slide_bar">
-            <div class="black_bar"></div>
-           </div>
-           
-       
-        </div>
-
         <div class="content">
-     
-         <div class="three_img">
-           
-             <p>NIKE 2018</p>
-             <p>NEW COLLECTION</p>
-            <div class="img3_boxwrap">
-                    <div class="img3s img3-1">
-                    <div class="boxwrap_p"><p>MEN</p>
-                    <button class="collection_btn">전체보기</button></div>
-                    </div>
-                   
-                  
-            </div>
-            <div class="img3_boxwrap">
-                    <div class="img3s img3-2">
-                    <div class="boxwrap_p"><p>WOMEN</p>
-                    <button class="collection_btn">전체보기</button></div>
-                    </div>
-                    
-                    
-            </div>
-            <div class="img3_boxwrap">
-                    <div class="img3s img3-3">
-                   <div class="boxwrap_p"><p>KID</p>
-                   <button class="collection_btn">전체보기</button></div>
-                    </div>
-                    
-                    
-            </div>
-          
-        </div> 
-
-        <div class="only_font">
-            <p>흔들리지 않는 최고의 스피드</p>
-        </div>
-
-        <div class="new_release">
-                <div class="release_img1 re_img">
-                    <img src="img/air_jordan33.png" alt="">
-                    <div class="fix1200">
-                    <button class="showmore2 sbtn_2">자세히 보기 〉</button>
-                    
-                    <button class="showmore2 sbtn_3">구매하기</button>
-                      </div>
+         
+            <div class="shoes">
+                <div class="topimg1">
+                    <img src="img/women_best/topimg1.png" alt="">
+                <button class="bestsell_btn"><span>자세히 보기</span></button>
                 </div>
-            
-            
-                <div class="release_img1-2 re_img">
-                    <img src="img/apple_watch.png" alt="">
-                    <div class="fix1200">
-                    <button class="showmore2 sbtn_4">자세히 보기 〉</button>
-                    </div>
-                </div>
-           
-            <div class="img23_box">
+                <div class="shoes_best_sec">
+                
+                    <div class="goods_wrap">
+                        <p>이 달의 추천상품</p>
+                         <span>제품더보기 〉</span>
 
-                <div class="img23_boxwrap1">
-                    <a href="#" target="_blank">
-                        <div class="release_img2">
-                            <div class="re_img1"></div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/shoes01.jpg" class="caption_rel" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 에어 베이퍼맥스 플라이니트 2</p>
+                                <p class="goods_cost">WOMEN 신발 라이프스타일</p>
+                                <p class="goods_cost">239,000 원</p>
+                            </div>
+                            
                         </div>
-                    </a>
-                    <p class="na_title">LOOK SHARP AND STAY WARM</p>
-                    <p>Polartec 원단의 나이키 SB 폴라텍 풀집 후디와 함께
-                        <br>
-                        겨울에도 스케이트 보딩을 마음껏 즐겨보세요.
-                    </p>
-                    <button class="showmore sbtn_1">Show More</button>
-                </div>
-
-                <div class="img23_boxwrap2">
-                    <a href="#" target="_blank">
-                        <div class="release_img3">
-                            <div class="re_img2"></div>
-                         </div>
-                    </a>
-                     <p class="na_title">THE RIGHT CLEAT FOR THEIR GAME</p>
-                     <p>나이키 키즈의 특별한 플레이 스타일에 최적화된
-                         <br>
-                         디자인과 성능으로 최고의 게임을 완성하다.
-                     </p> 
-                     <button class="showmore sbtn_2">Show More</button>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/shoes02.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 에어맥스 95 럭스</p>
+                                <p class="goods_cost">WOMEN 신발 라이프스타일</p>
+                                <p class="goods_cost">219,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/shoes03.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 에어 줌 윈플로우 5</p>
+                                <p class="goods_cost">WOMEN 신발 러닝</p>
+                                <p class="goods_cost">109,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec right_zero">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/shoes04.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 에어맥스 270</p>
+                                <p class="goods_cost">WOMEN 신발 라이프스타일</p>
+                                <p class="goods_cost">179,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/shoes05.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 에어 허라치 시티 로우</p>
+                                <p class="goods_cost">WOMEN 신발 라이프스타일</p>
+                                <p class="goods_cost">139,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/shoes06.jpg" alt="">
+                             <div class="goods_info">
+                                <p class="goods_name">에어 포스 1 하이 유틸리티</p>
+                                <p class="goods_cost">WOMEN 신발 라이프스타일</p>
+                                <p class="goods_cost">149,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/shoes07.jpg" alt="">
+                             <div class="goods_info">
+                                <p class="goods_name">나이키 블레이저 미드 레벨</p>
+                                <p class="goods_cost">WOMEN 신발 라이프스타일</p>
+                                <p class="goods_cost">129,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec right_zero">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/shoes08.jpg" alt="">
+                             <div class="goods_info">
+                                <p class="goods_name">에어 조던 1 레트로 하이 프리미엄 유틸리티</p>
+                                <p class="goods_cost">WOMEN 신발 라이프스타일</p>
+                                <p class="goods_cost">169,000 원</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+            <div class="clothes">
+                    <div class="topimg2">
+                        <img src="img/women_best/topimg2.png" alt="">
+                        <button class="bestsell_btn"><span>자세히 보기</span></button>
+                        </div>
+                <div class="clothes_best_sec">
+                    <div class="goods_wrap">
+                        <p>이 달의 추천상품</p>
+                            <span>제품더보기 〉</span>
+
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/clothes01.jpg" class="caption_rel" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 쉴드 후디 재킷</p>
+                                <p class="goods_cost">WOMEN 후디 재킷</p>
+                                <p class="goods_cost">169,000 원</p>
+                            </div>
+                            
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/clothes02.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 클래식 스파클 브라</p>
+                                <p class="goods_cost">WOMEN 브라</p>
+                                <p class="goods_cost">49,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/clothes03.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 스포츠웨어 다운 필 재킷</p>
+                                <p class="goods_cost">WOMEN 재킷</p>
+                                <p class="goods_cost">279,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec right_zero">
+                                <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/clothes04.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 써마 풀오버 후디 GRX</p>
+                                <p class="goods_cost">WOMEN 후디 긴팔 탑</p>
+                                <p class="goods_cost">79,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/clothes05.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 스포츠웨어 테크 팩 다운 필 파카</p>
+                                <p class="goods_cost">WOMEN 재킷</p>
+                                <p class="goods_cost">379,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/clothes06.jpg" alt="">
+                                <div class="goods_info">
+                                <p class="goods_name">나이키 스포츠웨어 팩 AOP 하이퍼팸 크루 탑</p>
+                                <p class="goods_cost">WOMEN 긴팔 탑</p>
+                                <p class="goods_cost">85,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/clothes07.jpg" alt="">
+                                <div class="goods_info">
+                                <p class="goods_name">나이키 스포츠웨어 플리스 후디</p>
+                                <p class="goods_cost">WOMEN 후디 긴팔 탑</p>
+                                <p class="goods_cost">69,300 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec right_zero">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/clothes08.jpg" alt="">
+                                <div class="goods_info">
+                                <p class="goods_name">나이키 스포츠웨어 랠리 크루 탑 HBR</p>
+                                <p class="goods_cost">WOMEN 긴팔 탑</p>
+                                <p class="goods_cost">85,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="etc_sec_wrap">
+                <img src="img/women_best/topimg3.png" alt="">
+                <div class="sports_best_sec">
+                    <div class="goods_wrap">
+                        <p>이 달의 추천상품</p>
+                        <span>제품더보기 〉</span>
+
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/item01.jpg" class="caption_rel" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 밀러 러닝 글로브</p>
+                                <p class="goods_cost">UNISEX 슬리브</p>
+                                <p class="goods_cost">19,000 원</p>
+                            </div>
+                            
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/item02.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 H86 코리아 캡</p>
+                                <p class="goods_cost">UNISEX 모자</p>
+                                <p class="goods_cost">20,300 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/item03.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 트레이닝 하이퍼차지 스트로우 보틀 16oz</p>
+                                <p class="goods_cost">UNISEX 물병</p>
+                                <p class="goods_cost">25,000 원</p>
+                            </div>
+                        </div>
+                        <div class="goods_sec right_zero">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                            <img src="img/women_best/item04.jpg" alt="">
+                            <div class="goods_info">
+                                <p class="goods_name">나이키 펀더멘털 웨이티드 로프</p>
+                                <p class="goods_cost">UNISEX 로프</p>
+                                <p class="goods_cost">29,000 원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="watch_wrap">
+                    <img src="img/women_best/watch.png" alt="">
+                    <button class="watch_view">Apple Watch Nike+ 자세히</button>
+                  </div>
+                <div class="bra_wrap">
+                    <img src="img/women_best/braimg.png" alt="">
+                    <button class="bestsell_btn"><span>자세히 보기</span></button></div>
+                <div class="etc_sec">
+                    <div class="etcbox_wrap"><div class="etc_box1"></div></div>
+                    <div class="text_box">
+                        <div class="p1">브랜드 전체보기</div>
+                        <div class="p2">브랜드 전체보기</div>
+                    </div>   
+                </div>
+                <div class="etc_sec">
+                        <div class="etcbox_wrap"><div class="etc_box2"></div></div>
+                     <div class="text_box">
+                         <div class="p1">용품 전체보기</div>
+                         <div class="p2">용품 전체보기</div>
+                        </div>
+                </div>
+
+            </div>
         </div>
-        
-        
-
-        <div class="best_seller">
-            <p>NEW ARRIVALS</p>
-            <p class="arrival">올 겨울, 나이키 신제품으로 다양한 스타일을 연출해보세요.</p>
-
-            <div class="bestsell_box">
-                <div id="btn_left2" class="bestsell_btn"><span>〈</span></div>
-                <div id="btn_right2" class="bestsell_btn"><span>〉</span></div>
-
-                <div class="slide_section">
-                    <a href="#" target="_blank"><div class="goods Gimg1"></div></a>
-                    <a href="#" target="_blank"><div class="goods Gimg2"></div></a>
-                    <a href="#" target="_blank"><div class="goods Gimg3"></div></a>
-                    <a href="#" target="_blank"><div class="goods Gimg4"></div></a>
-                </div>
-                <div class="slide_section">
-                    <a href="#" target="_blank"><div class="goods2 Gimg1"></div></a>
-                    <a href="#" target="_blank"><div class="goods2 Gimg2"></div></a>
-                    <a href="#" target="_blank"><div class="goods2 Gimg3"></div></a>
-                    <a href="#" target="_blank"><div class="goods2 Gimg4"></div></a>
-                </div>
-                <div class="slide_section">
-                    <a href="#" target="_blank"><div class="goods3 Gimg1"></div></a>
-                    <a href="#" target="_blank"><div class="goods3 Gimg3"></div></a>
-                    <a href="#" target="_blank"><div class="goods3 Gimg3"></div></a>
-                    <a href="#" target="_blank"><div class="goods3 Gimg4"></div></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="banner_img">
-            
-            <div class="banner">
-            
-            
-            <div class="find_store">
-            <button class="last_btn">가까운 매장 찾기</button>
-            </div>
-
-            </div>
-
-          
-            <div class="banner">
-            <div class="see_nrc_club">
-            <button class="last_btn">NRC CLUB <br>자세히</button>
-            </div>
-            </div>
-        </div>
-
-        <a href="#"><div class="last_img">
-            <img src="img/nrc.png" alt="">
-        </div></a>
-
         <footer>
             <div class="news_letter">
                 <span>최신 소식 받아보기</span>
@@ -1264,139 +804,6 @@
             </div>
            
         </footer>
-        </div>
-    <script>
-        $(document).ready(function(){
-            $('.slide').eq(0).css({
-                left:0
-            });
-            $('.slide_section').eq(0).css({
-                left:0
-            });
-            auto_interval();
-
-            var slide_interval = 800;
-            var index = 1;
-            var index2 = 1;
-            $('#btn_right').click(function(){ 
-                btn_init();
-                slide_move((index - 1) % $('.slide').length, '-100%', index % $('.slide').length,'100%');
-                index++;
-            });
-
-            $('#btn_left').click(function(){
-                btn_init();
-                index--; 
-                slide_move(index % $('.slide').length, '100%', (index - 1) % $('.slide').length, '-100%' );
-            });
-            
-            $('#btn_right2').click(function(){
-                btn_init();
-                slide_move2((index2 - 1) % $('.slide_section').length, '-100%', index2 % $('.slide_section').length,'100%')
-                index2++;
-            });
-            $('#btn_left2').click(function(){
-                btn_init();
-                index2--; 
-                slide_move2(index2 % $('.slide_section').length, '100%', (index2 - 1) % $('.slide_section').length, '-100%' );
-            });
-
-            //---------------------------------------------------------------
-            function btn_init(){
-                $('.btn_slide, .bestsell_btn').css('pointer-events','none');
-                $('.slide_section > a').css('pointer-events','none');
-                setTimeout(function(){
-                    $('.btn_slide, .bestsell_btn').css('pointer-events','auto');
-                    $('.slide_section > a').css('pointer-events','auto');
-                },slide_interval);
-
-                // $('.btn_slide, .bestsell_btn').attr('disabled', true);
-            }
-            function slide_move(now_index, now_pos, next_index, next_pos){
-                $('.slide').eq(now_index).animate({
-                    left: now_pos
-                },slide_interval);
-
-                $('.slide').eq(next_index).css({
-                    left:next_pos
-                }).animate({
-                    left:0,
-                },slide_interval);
-            }
-            
-            // ----------------------------------------------------------------
-            function slide_move2(now_index, now_pos, next_index, next_pos){
-                $('.slide_section').eq(now_index).animate({
-                    left: now_pos
-                },slide_interval);
-
-                $('.slide_section').eq(next_index).css({
-                    left:next_pos
-                }).animate({
-                    left:0,
-                },slide_interval);
-            }
-            //--------------------------------------------------------------------
-            var timer;
-            function auto_interval(){
-                timer = setInterval(function(){
-                    $('#btn_right').trigger('click');
-                },3000);
-            }
-
-              $('.slide_box').hover(function(){
-                clearInterval(timer);
-            }, function(){
-                auto_interval();
-            });
-            //-----------------------------------------------------------------------
-            var direction;
-            var scrollposition = $('.content').offset().top -200;
-
-            var scrollmove;
-                $(window).on("mousewheel DOMMouseScroll", function(e){
-                    // e.preventDefault();
-                    
-                    // if(event.wheelDelta){
-                    //     direction = event.wheelDelta / 120;
-                    scrollmove = $(document).scrollTop();
-                    if(scrollmove >= scrollposition){
-
-                        $('.wrap').css({
-                            background: "rgba(0,0,0,0.7)",
-                            transition: "all .4s"
-                        })
-                        $('.logo').css({
-                            background: "url('img/logo_white.png') no-repeat",
-                            backgroundSize:"contain",
-                            transition: "all .4s"
-                        })
-                    }else{                       
-                        $('.wrap').css({
-                            background: "transparent"
-                        })
-                        $('.logo').css({
-                            width:118+"px",
-                            height: 100+"px",
-                            background: "url('img/logo.png') no-repeat",
-                            backgroundSize:"contain",                        
-                            transition: "all .4s"
-                        })
-                    }
-                    
-                    var windowWidth = $(window).width();
-                    if(windowWidth < 768){
-                        $('.logo').css({
-                            width:'70px',
-                            height:'50px',
-                            background: "url('img/logo.png') no-repeat",
-                            backgroundSize:"contain",                        
-                        })
-                    }
-                        
-                });      
-        });
-              
-    </script>
+    
 </body>
 </html>

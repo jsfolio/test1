@@ -1,0 +1,123 @@
+@media (max-width:480px){
+    .top > ul{
+        text-align: center;
+    }
+    .top > ul > li{
+        padding-left: 15px;
+    }
+    .top > ul > li > a{
+        color:#000;
+    }
+    .logo{
+        width:70px;
+        height:50px;
+        background: url('img/logo.png') no-repeat;
+        background-size: contain;
+        top:45px;
+    }
+    .search_box{
+        display: none;
+    }
+    header{
+        background:#fff;
+        height:80px;
+    }
+    .slide_box{
+        margin-top:80px;
+    }
+    nav ul{
+        display: none;
+    }
+   .footer_ulbox{
+       display: none;
+   }
+   .goods_wrap{
+    text-align: center;
+    }
+    .goods_sec{
+        width:49%;
+        margin-right:0;
+    }
+    .thumbnail{
+        height: 700px;
+        padding:0;
+    }
+    .section1{
+        width:100%;
+    }
+    .section2{
+        width:100%;
+        clear: both;
+    }
+    .section1-2 > ul > li{
+        width:calc(100% / 6);
+        text-align: center;
+        float: left;
+        font-weight: normal;
+        padding:15px 0px;
+    }
+    .section1-2 .product > li >a{
+        font-size:12px;
+    }
+    .thumb_relative1,
+    .thumb_relative2,
+    .thumb_relative3,
+    .thumb_relative4,
+    .thumb_relative1 > div,
+    .thumb_relative2 > div,
+    .thumb_relative3 > div,
+    .thumb_relative4 > div{
+        position: relative;
+        left:auto;
+    }
+    .thumbnail .thumb_relative1{
+        position: absolute;
+        left:0;
+        top:0;
+    }
+    .thumbnail .thumb_relative2{
+        position: absolute;
+        left:50%;
+        top:0;
+    }
+    .thumbnail .thumb_relative3{
+        position: absolute;
+        left:0;
+        top:50%;
+    }
+    .thumbnail .thumb_relative4{
+        position: absolute;
+        left:50%;
+        top:50%;
+    }
+    .thumb_sec{
+        width:calc((100% - (10px * 3)) /2);
+        margin-right: 5px;
+        margin-left:5px;
+    }
+    .category_onoff{
+        display: none;
+    }
+    .thumb_sec div.sale{
+        position: absolute;
+        bottom:117%;
+        right:1%;
+    }
+
+    .ham_box{
+        display: block;
+    }
+    .mobile_menu > ul{
+        position: absolute;
+        top:80px;
+    }
+    .show{
+        left:20%;
+    }
+    .hide{
+        left:100%;
+    }
+    .show_toggle{
+        height:335px;
+    }
+}

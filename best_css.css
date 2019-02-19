@@ -1,0 +1,139 @@
+button{cursor: pointer;}
+
+.content{
+    max-width:1200px;
+    margin:0 auto;
+    margin-top:134px;
+}
+
+.bestsell_btn{
+    position: absolute;
+    width:120px;
+    height:40px;
+    background:#fff;
+    color:#000;
+    z-index: 1;   
+    text-align: center;
+    right:80px;
+    bottom:130px;
+}
+.topimg0,.shoes,.clothes,.etc_sec_wrap{
+    margin-bottom:84px;
+}
+.shoes_best_sec,.clothes_best_sec,.sports_best_sec,.etc_sec_wrap{
+    margin:0 auto;
+    margin-top:52px;
+   
+}
+.goods_wrap > p{
+    font-size:25px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1px;
+}
+.goods_wrap > span{
+    font-size:16px;
+    font-weight: normal;
+    color:#777;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom:10px;
+}
+.goods_wrap{
+    max-width:1000px;
+    margin:0 auto;
+    margin-bottom:48px;
+}
+.goods_sec{    
+    margin-right:20px;
+    margin-bottom:20px;
+    display: inline-block;
+    width:230px;
+    height:326px; 
+     position: relative;
+}
+.goods_sec img{
+    cursor: pointer;
+}
+.right_zero{
+    margin-right:0;
+}
+.goods_info{
+    margin-top:5px;
+    width:230px;
+    height:92px;
+    box-sizing: border-box;
+}
+.goods_info > p.goods_name{
+    height:48px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.goods_info > p.goods_cost{
+    color:#777;
+    font-size: 14px;
+}
+.black{
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left:0;
+    width:230px;
+    height:230px;
+    background:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all .3s;
+}
+.goods_sec:hover .black{
+    opacity: 1;
+}
+.view_more{
+    position: absolute;
+    width:100px;
+    height:40px;
+    background:#fff;
+    color:#000;
+    border:1px solid;
+    border-radius: 2px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:14px;
+}
+.etc_sec{
+    height:490px;
+    text-align: center;
+    float: left;
+}
+.etcbox_wrap{
+    width: 600px;
+    height:432px;
+    overflow: hidden;
+}
+
+.etc_box1:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.etc_box2:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.text_box{
+    margin-top:10px;
+    height:18px;
+    overflow: hidden;
+}
+.text_box > .p1,.p2{
+    font-size: 14px;
+    text-decoration: underline;
+    transition: all .3s;
+    cursor: pointer;
+}
+.etc_sec:hover .p1{
+    transform: translateY(-24px);
+}
+.etc_sec:hover .p2{
+    transform: translateY(-18px);
+}

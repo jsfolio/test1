@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href= "menu.css">
+    <link rel="stylesheet" href= "menu2.css">
     <link rel="stylesheet" href="login_modal.css">
     <link rel="stylesheet" href="ham_css.css">
     <link rel="stylesheet" href="mini_menu.css">
@@ -13,623 +14,214 @@
     <link rel="stylesheet" media="(min-width:481px) and (max-width:767px)" href="width481_767.css" />
     <link rel="stylesheet" media="(min-width:768px) and (max-width:1023px)" href="width768_1023.css" />
     <link rel="stylesheet" media="(min-width:1024px) and (max-width:1199px)" href="width1024_1199.css" />
-
-    <script src="goods_script.js"></script>
     <script src="mobile_menu.js"></script>
-    
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">   
-    <link rel="stylesheet icon" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <title>NIKE Sports</title>
-
+    <title>NIKE │ 회원가입</title>
     <style>
-   
-        .slide_box{
-            position: relative;
-            width:100%;
-            height:725px;
-            overflow: hidden;
-            left:0;
-            top:0;
-         
-            transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);          
-            background-attachment: fixed;
-            
-        }
-     
-        .slide{
-            position: absolute;
-            left:100%;
-            top:0;
-            width:100%;
-            height:100%;
-            background-attachment: fixed;
-        }
-        .slide.img1{background:url('img/header_slide1.png') no-repeat ;
-        background-attachment: fixed;}
-        .slide.img2{background:url('img/header_slide2.png') no-repeat ;
-        background-attachment: fixed;}
-        .slide.img3{background:url('img/header_slide3.png') no-repeat ;
-        background-attachment: fixed;}
-        .slide.img4{background:url('img/header_slide4.png') no-repeat ;
-        background-attachment: fixed;}
-      
-        .btn_slide{
-            position: absolute;
-            width:300px;
-            height:100%;
-            z-index: 2;
-            font-size:100px;
-            color:#fff;
-        }
-        .btn_slide >span{
-            position: absolute;
-            left:50%;
-            top:50%;
-            transform: translate(-50%,-50%);
-            cursor: pointer;
-            
-        }
-        #btn_left{
-            left:0;
-            top:0;
-        }
-        #btn_right{
-            right: 0;
-            top:0;
-        }
-    /* ------------------------------------------------------- */
         .content{
-            background:url('img/behind.png') no-repeat center;
-            background-attachment: fixed;
+            max-width:1200px;
+            margin:0 auto;
+            margin-top:134px;
         }
-        .only_font{
-            line-height: 322px;
-            text-align: center;
-        }
-        .only_font > p{
-            min-width:586px;
-            color:#fff;
-            letter-spacing: 25px;
-            font-size: 18px;
-        }
-    
-        .new_release{
-            text-align: center;
-            padding:48px 0 48px 0;
-            background:#c4c4c4;
-        }
-        .new_release a{
-            text-decoration: none;
-        }
-        .new_release > p{
-            font-size:4em;
-            font-weight: bold;
-        }
-
-        .re_img img,
-        .last_img img{
-            max-width: 100%; 
-            width /***/: auto; /* IE8 */
-            height: auto;
-            vertical-align: bottom;
-        }
-        
-        .release_img1, .release_img1-2{
-            position: relative;
-        }
-        .fix1200{
-            position: absolute;
-            top:50%;
-            left:19%;
-        }
-        .showmore2{
-            width:150px;
-            height:40px;
-            background-color: #000;
-            border:none;
-            border-radius:1px;
-            color:#fff;
-            padding:10px 15px;
-            box-sizing: border-box;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            
-            margin-bottom:15px;
-            cursor: pointer;
-          
-            transition:all .3s ease;
-        
-            position: absolute;
-            top:50%;
-            left:30%;
-        }
-        .sbtn_3{
-            margin-top:50px;
-        }
-        .sbtn_4{
-            margin-top:50px;
-        }
-        .showmore2:hover{
-            background-color:#fff;
-            color:#000;
-            border:1px solid;
-            box-sizing: border-box;
-        }
-      
-        /* --------------------------------------- */
-        .img23_box{
-            text-align: center;
-        }
-        .img23_boxwrap1,
-        .img23_boxwrap2{
-            display: inline-block;
-            margin-top:32px;
-            transition:all .35s;
-        }
-        .img23_boxwrap2{
-            margin-left:20px;
-        }
-        .release_img2,.release_img3{
-            overflow: hidden;
-            
-        }
-        .re_img1{
-            background:url('img/release_img1.png') no-repeat;
-            width:670px;
-            height:402px;
-            transition:all .35s;
-
-        }
-        .re_img2{
-            background:url('img/release_img2.png') no-repeat;
-            width:670px;
-            height:402px;
-            transition:all .35s;
-        }
-        .release_img2:hover .re_img1{
-            transform: scale(1.1);
-        }
-        .release_img2:hover .release_img2{
-            transform: scale(0.8);
-        }
-        .release_img3:hover .re_img2{
-            transform: scale(1.1);
-        }
-
-        .na_title{
-            font-size: 30px;
-            font-weight: bold;
-            margin-top:30px;
-        }
-        .na_title p:nth-child(2){
-            margin-top:30px;
-        }
-        .showmore{
-            width:280px;
-            height:80px;
-            background-color: #000;
-            border:none;
-            border-radius: 1px;
-            color:#fff;
-            padding:10px 15px;
-            box-sizing: border-box;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1.875em;
-            
-            cursor: pointer;
-            margin-top:25px;
-            transition:all .3s ease;
-        }
-        .showmore:hover{
-            background-color:#fff;
-            color:#000;
-            border:1px solid;
-            box-sizing: border-box;
-        }
-        .three_img{   
-            padding:30px 0 50px;
-            box-sizing: border-box;
-            text-align: center;
-            background:#232323;
-        }
-        .img3-1{background:url('img/men.png');}
-        .img3-2{background:url('img/women.png');}
-        .img3-3{background:url('img/kid.png');}
-
-        .three_img > p{
-            font-size:50px;
-            font-weight: bold;
-            color:#fff;
-        }
-        .three_img > p:first-child{
-            font-size:40px;
-            margin-bottom:-15px;
-        }
-        .img3_boxwrap{
-            width:331px;
-            height:438px;
-            display: inline-block;
-            margin-top:24px;
-            padding:0 20px 0;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
-        
-        .img3s{
+        .form_wrap{
             width:100%;
-            height:100%; 
-            position: relative;
+            margin:0 auto;
         }
-        .img3_boxwrap:last-child{
-            margin-right: 0;
-        }
-        .boxwrap_p{
-            position: absolute;
-            width:100%;
-            height:160px;
-            background:rgba(0,0,0,0.5);
-            bottom:0;
-            color:#fff;
-            font-size:30px;
-            font-weight: bold;
-        }
-        .boxwrap_p > p{
-            margin-top:20px;
-        }
-       
-       
-        .collection_btn{
-            width:120px;
+        .form_top{
             height:50px;
-            background-color: #000;
-            border: 1px solid rgba(255,255,255,.5);
-            border-radius: 2px;
-            color:#fff;
-            padding:5px 10px;
-            box-sizing: border-box;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top:10px;
-            transition:all .3s ease;
-        }
-        .collection_btn:hover{
-            background-color:#fff;
-            color:#000;
-            border:none;
-            box-sizing: border-box;
-        }
-        /* -------------------------------------------------------------- */
-        .best_seller{
-            padding:50px;
-            box-sizing: border-box;
-             text-align: center;
-             background:url('img/bestseller_back.png') no-repeat;
-        }
-
-        .best_seller > p{
-            font-size:50px;
-            font-weight: bold;
-            color:#fff;
-        }
-        .best_seller> p.arrival{
-            font-size:25px;
-            margin-bottom:25px;
-        }
-        .bestsell_btn{
-            position: absolute;
-            width:80px;
-            height:100%;
-            font-size:2em;
-            font-weight:800;
-        }
-        .bestsell_btn >span{
-            position: absolute;
-            left:50%;
-            top:50%;
-            transform: translate(-50%,-50%);
-            cursor: pointer;
-            width:50px;
-            height:50px;
-            background:rgba(0,0,0,0.2);
-            color:#fff;
-            transition:all .3s linear;
-        }
-    
-        .bestsell_btn >span:hover{
-            background:rgba(0,0,0,0.5);
-        }
-        #btn_left2{
-            left:-5px;
-            top:0;
+            margin:50px 0 25px;
             text-align: left;
+            border-bottom: 2px solid #393939; 
         }
-        #btn_right2{
-            right: 1px;
-            top:0;
-            text-align: right;
-        }
-       .bestsell_box{
-           width:1000px;
-           height:236px;
-           margin:0 auto ;         
-           overflow: hidden;
-           box-sizing: border-box;
-           position: relative;
-       }
-       .slide_section{
-           position: absolute;
-           left:100%;
-           top:0;
-           width:100%;
-           height:100%;
-       }
-       .goods , .goods2, .goods3{
-           width:236px;
-           height:236px;
-           float:left;
-           margin:0 10px 0 10px;
-       }
-       .goods:last-child, .goods2:last-child,.goods3:last-child{
-           margin: 0 0 0 10px;
-       }
-       
-       .goods.Gimg1{background:url('img/1-1.png') no-repeat; }
-       .goods.Gimg2{background:url('img/1-2.png') no-repeat;}
-       .goods.Gimg3{background:url('img/1-3.png') no-repeat;}
-       .goods.Gimg4{background:url('img/1-4.png') no-repeat;}
-       .goods2.Gimg1{background:url('img/2-1.png') no-repeat;}
-       .goods2.Gimg2{background:url('img/2-2.png') no-repeat;}
-       .goods2.Gimg3{background:url('img/2-3.png') no-repeat;}
-       .goods2.Gimg4{background:url('img/2-4.png') no-repeat;}
-       .goods3.Gimg1{background:url('img/3-1.png') no-repeat;}
-       .goods3.Gimg2{background:url('img/3-2.png') no-repeat;}
-       .goods3.Gimg3{background:url('img/3-3.png') no-repeat;}
-       .goods3.Gimg4{background:url('img/3-4.png') no-repeat;}
-
-       .banner_img {
-            text-align: center;
-            padding:50px;
-            margin-bottom:112px;
-            background:linear-gradient(to bottom, #303030 10%, transparent);
-            box-sizing: border-box;
-        }
-   
-        .banner{  
-            display: inline-block;
-            padding:10px;
-            margin-bottom:20px;
-            position: relative;    
-        } 
-        .find_store{
-            width:292px;
-            height:416px;
-            background:url('img/last_off.jpg') no-repeat;
-            transition:all .3s; 
-        }
-        .banner:hover  .find_store{
-            background:url('img/last_on.jpg') no-repeat;
-        }
-        .see_nrc_club{
-            width:292px;
-            height:416px;
-            background:url('img/last2_off.jpg') no-repeat;
-            transition:all .3s; 
-        }
-        .banner:hover  .see_nrc_club{
-            background:url('img/last2_on.jpg') no-repeat;
-        }
-        .last_btn{
-            width:120px;
-            height:50px;
-            background-color: #000;
-            border:1px solid #fff;
-            border-radius: 2px;
-            color:#fff;
-            padding:5px 10px;
-            box-sizing: border-box;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 12px;
+        .form_top > p{
+            font-size:25px;
             font-weight: bold;
-            cursor: pointer;
-           
-
-            transition:all .3s ease;
-            position: absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-           
+            letter-spacing: -1px;
         }
-        .banner:hover .last_btn{
-             background-color:#fff;
-            border: 1px solid #000;
-            color:#000;
+        .sign-up-top{
+            width:100%;
+            height:216px;
+            margin:0 auto;
+            background:url('img/sign_up_img/signup_top.png') no-repeat;
+        }
+        #sign-up-form{
+            margin-left:140px;
+        }
+     
+        .info_wrap{
+            width:100%;
+            line-height: 50px;
+            overflow: hidden;
+            padding:8px 0 8px 0;
+            border-bottom:1px solid #d3d3d3;
             box-sizing: border-box;
         }
+        label{
+            line-height: 50px;
+            float: left;
+        }
+        .final_check label{
+            width: 100%;
+        }
+        label > p {
+            font-size:14px;
+            margin-left:30px;
+        }
+        span.asterisk{
+            color:#ff0000;
+            vertical-align: middle;
+        }
+        input[type=text], input[type=password] {
+            width:50%;
+            height:30px;
+          background:#f1f1f1;
+            padding:10px;
+            border:1px solid #d3d3d3;
+            line-height: 10px;
+            box-sizing: border-box;
+          
+        }
+        #email_id1, #email_id2{
+            width:120px;
+            line-height: 10px;
+            
+        }
+        input.phone_num1,input.phone_num2,input.phone_num3{
+            width:70px;
+            height:30px;
+            padding:10px;
+            background:#f1f1f1;
+            border:1px solid #e4e4e4;
+            box-sizing: border-box;
+        }
+        .id_check{
+            display: inline-block;
+            width:100px;
+            height:30px;
+            line-height: 30px;
+            background:#000;
+            color:#fff;
+            border:none;
+            outline: none;
+            cursor: pointer;
+        }
+        #email_select{
+            width:120px;
+            height:30px;
+            vertical-align: middle;       
+        }
+        input[type=text]:focus, input[type=password]:focus {
+             background-color: #ddd;
+             outline: none;
+        }
+        .birth_wrap{
+            display: inline-block;
+            line-height: 50px;
+        }
+        #birth_year, #birth_month, #birth_date{
+            width:80px;
+            height:30px;
+            padding:5px;
+            background:#f1f1f1;
+            border:1px solid #d3d3d3;
+            vertical-align: middle;
+            box-sizing: border-box;
         
+        }   
         
+        .final_check{
+            position: relative;
+        }
+        .final_check input[type="checkbox"]{
+            position: absolute;
+            display: none;
+        }
+        .final_check input[type="checkbox"] + label{
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            -webkit-user-select: none; 
+            -moz-user-select: none;
+             -ms-user-select: none;
+             color:#777;
+           
+             font-size:15px;
+        }
+        .height_30{
+            line-height: 30px;
+        }
+        .final_check input[type="checkbox"] + label:before{
+            content:"";
+            display: inline-block;
+            width:21px;
+            height:21px;
+            line-height: 21px;
+            margin:-2px 8px 0 0;
+            text-align: center;
+            vertical-align: middle;
+            background:#fafafa;
+            border:1px solid #cacaca;  
+        }
+        .final_check input[type="checkbox"]:checked + label:before{
+            content: "\2714";
+            color:#fff;
+            background:#393939;
+        }
         
-        @media (min-width:1024px) and (max-width:1199px){
-    
-            .slide.img2{background:url('img/header_slide2.png') 20% 0 no-repeat ;
-            background-attachment: fixed;}
-            .slide.img3{background:url('img/header_slide3.png') 50% 0 no-repeat ;
-            background-attachment: fixed;}
-     
+        .final_btn{
+            margin:100px auto;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .cancel{
+            display: inline-block;
+            width:150px;
+            height:48px;
+            background:#fff;
+            border:1px solid #797979;
+            font-size:17px;
+            cursor: pointer;
+            margin-right:15px;
+        }
+        .sign-up{
+            display: inline-block;
+            width:150px;
+            height:48px;
+            background:#000;
+            color:#fff;
+            border:1px solid ;
+            font-size:17px;
+            cursor: pointer;
+            margin-left:15px;
         }
         @media (min-width:768px) and (max-width:1023px){
-            .slide_box{
-                height:350px;
+            #sign-up-form{
+                margin-left:0;
+                padding:0 28px 0;
+                box-sizing: border-box;
             }
-            .btn_slide{
-               width:10%;
-               font-size:70px;
-           }
-           
+        
         }
         @media (min-width:481px) and (max-width:767px){
-            .slide_box{
-                margin-top:100px;
-                height:350px;
+            #sign-up-form{
+                margin-left:0;
+                padding:0 28px 0;
+                box-sizing: border-box;
             }
-            .btn_slide{
-               width:10%;
-               font-size:70px;
-           }
-           .showmore2{
-               display: none;
-           }
-           .slide_section{
-               margin-left:23px;
-           }
-           .only_font{
-               line-height: 110px;
-           }
-           .only_font > p{
-               min-width: auto;
-               letter-spacing: 12px;
-           }
-           
-           .bestsell_box{
-               width:auto;
-           }
-           .banner_img{
-               padding:0;
-               margin-bottom: 0;
-           }
-           .banner{
-               width:50%;
-               padding:0;
-               float:left;
-           }
-           .find_store,
-           .see_nrc_club{
-               height:200px;
-           }
-           .last_btn{
-               font-weight: normal;
-           }
+        
         }
+
         @media (max-width:480px){
-            .slide_box{
-                margin-top:100px;
-                height:256px;
+            #sign-up-form{
+                margin-left:0;
+                padding:0 28px 0;
+                box-sizing: border-box;
             }
-            .btn_slide{
-               width:10%;
-               font-size:70px;
-           }
-           .only_font{
-               line-height: 110px;
-           }
-           .only_font > p{
-               min-width: auto;
-               text-align: center;
-               letter-spacing: 8px;
-           }
-
-           .img3_boxwrap{
-               width:30%;
-               height:268px;
-               padding:0 10px 0;
-           }
-           .img3-1,
-           .img3-2,
-           .img3-3{
-               background-size: cover;
-               background-position: center;
-           }
-           .boxwrap_p{
-               height:112px;
-               font-size:16px;
-           }
-           .boxwrap_p > p{
-               margin-top:20px;
-           }
-           .collection_btn{
-               width:auto;
-               height: auto;
-               font-size: 13px;
-               font-weight: normal;
-           }
-           .showmore2{
-               display: none;
-           }
-           .img23_box{
-               padding:28px;
-           }
-           .img23_boxwrap1,
-           .img23_boxwrap2{
-               display: block;
-               font-size:0.875em;
-           }
-           .release_img1,
-           .release_img1-2{
-               height: 150px;
-           }
-           .re_img img{
-               transform: scale(1.5);
-           }
-           .re_img1,
-           .re_img2{
-               height:335px;
-           }
-           .na_title{
-               font-size:1.5em;
-           }
-            .slide_section{
-               margin-left:25px;
-           }
-           .bestsell_box{
-               width:auto;
-           }
-         
-           .bestsell_btn > span{
-               color:#000;
-               height:auto;
-               background:transparent;
-           }
-           .banner_img{
-               padding:0;
-               margin-bottom: 0;
-           }
-           .best_seller > p{
-               font-size:2em;
-           }
-           .best_seller> p.arrival{
-               font-size:0.875em;
-               font-weight: normal;
-           }
-           .banner{
-               width:50%;
-               padding:0;
-               float:left;
-           }
-           .find_store,
-           .see_nrc_club{
-               height:200px;
-           }
-           .last_btn{
-               font-weight: normal;
-           }
-           .news_letter{
-               line-height: 50%;
-           }
-
-           
+        
         }
-    </style>
 
+
+    </style>
 </head>
 <body>
         <div id="myModal" class="loginmodal">
@@ -648,9 +240,11 @@
                         <label for="login_psw">비밀번호</label>
                         <input type="password" placeholder="비밀번호" id="login_psw" required>
                         </div>
+                    
                         <input type="checkbox"><p class="remember">remember me</p>
                         <p class="find">아이디/비밀번호 찾기</p>
                         <div class="center_align">
+                     
                         <button class="login_btn">로그인</button>
                         <p class="login_signup">회원가입</p>
                         </div>                   
@@ -776,12 +370,11 @@
                                         <li><a href="men_best.html">ACG</a></li>
                                     </ul>
                                 </li>
-                                <li class="sub_li menu_img">
-                                    <a href="women_best.html">
-                                        <img src="img/women_img.png" alt="">
-                                    </a>
+                                <li class="sub_li menu_img"><a href="women_best.html">
+                                    <img src="img/women_img.png" alt=""></a>
                                     <p>높아진 중창과 낮아진 발목라인</p>
-                                    <p>에어 포스1 세이지 로우</p> 
+                                    <p>에어 포스1 세이지 로우</p>
+                                
                                 </li>
                             </ul>
                             </div>
@@ -945,7 +538,6 @@
                         <span></span>
                         <span></span>
                     </div>
-                </div>
                 
                 </nav>
             </header>
@@ -1025,170 +617,158 @@
             
         </div>
         <div class="panel-overlay"></div>   
-        <div class="slide_box">
-            <div id="btn_left" class="btn_slide">
-                <span>〈</span>
-            </div>
-            <div id="btn_right" class="btn_slide">
-                <span>〉</span>
-            </div>
+       <div class="content">
+            <div class="sign-up-top"></div>
 
-            <div class="slide_img">
-                <div class="slide img1"></div>
-                <div class="slide img2"></div>
-                <div class="slide img3"></div>
-                <div class="slide img4"></div>
-            </div>
-
-            <div class="slide_bar">
-            <div class="black_bar"></div>
-           </div>
-           
-       
-        </div>
-
-        <div class="content">
-     
-         <div class="three_img">
-           
-             <p>NIKE 2018</p>
-             <p>NEW COLLECTION</p>
-            <div class="img3_boxwrap">
-                    <div class="img3s img3-1">
-                    <div class="boxwrap_p"><p>MEN</p>
-                    <button class="collection_btn">전체보기</button></div>
-                    </div>
-                   
-                  
-            </div>
-            <div class="img3_boxwrap">
-                    <div class="img3s img3-2">
-                    <div class="boxwrap_p"><p>WOMEN</p>
-                    <button class="collection_btn">전체보기</button></div>
-                    </div>
-                    
-                    
-            </div>
-            <div class="img3_boxwrap">
-                    <div class="img3s img3-3">
-                   <div class="boxwrap_p"><p>KID</p>
-                   <button class="collection_btn">전체보기</button></div>
-                    </div>
-                    
-                    
-            </div>
-          
-        </div> 
-
-        <div class="only_font">
-            <p>흔들리지 않는 최고의 스피드</p>
-        </div>
-
-        <div class="new_release">
-                <div class="release_img1 re_img">
-                    <img src="img/air_jordan33.png" alt="">
-                    <div class="fix1200">
-                    <button class="showmore2 sbtn_2">자세히 보기 〉</button>
-                    
-                    <button class="showmore2 sbtn_3">구매하기</button>
-                      </div>
-                </div>
-            
-            
-                <div class="release_img1-2 re_img">
-                    <img src="img/apple_watch.png" alt="">
-                    <div class="fix1200">
-                    <button class="showmore2 sbtn_4">자세히 보기 〉</button>
-                    </div>
-                </div>
-           
-            <div class="img23_box">
-
-                <div class="img23_boxwrap1">
-                    <a href="#" target="_blank">
-                        <div class="release_img2">
-                            <div class="re_img1"></div>
+            <div class="form_wrap">
+                 
+                <form name="form" id="sign-up-form" action="#" method="post">
+                    <div class="form_top">
+                            <p>회원가입 정보 입력</p>
                         </div>
-                    </a>
-                    <p class="na_title">LOOK SHARP AND STAY WARM</p>
-                    <p>Polartec 원단의 나이키 SB 폴라텍 풀집 후디와 함께
+                    <div class="info_wrap">
+                    <label for="user_name"><span class="asterisk">*</span>이름</label>
+                    <input type="text" placeholder="이름을 입력하세요." id="user_name" required>
+                   </div>
+                   <div class="info_wrap">
+                    <label for="id"><span class="asterisk">*</span>아이디</label>
+                    <input type="text" placeholder="아이디를 입력하세요.(특수문자 입력 불가)" id="id" required>
+                    <input type="button" class="id_check" value="중복확인" onclick="id_check()">
+                    </div>
+                    <div class="info_wrap">
+                    <label for="psw"><span class="asterisk">*</span>비밀번호</label>
+                    <input type="password" placeholder="영문/숫자/특수문자 조합 8~16자" id="psw" required>
+                    </div>
+                    <div class="info_wrap">
+                    <label for="psw_chk"><span class="asterisk">*</span>비밀번호 확인</label>
+                    <input type="password" placeholder="비밀번호 확인" id="psw_chk" required>
+                    </div>
+                    <div class="info_wrap">
+                    <label for="phone"><span class="asterisk">*</span>휴대폰</label>
+                        <input type="text" class="phone_num1" id="phone">  -
+                        <input type="text" class="phone_num2"> -
+                        <input type="text" class="phone_num3">
+                     </div>
+                     <div class="info_wrap"> 
+                    <label for="email_id1">이메일</label>
+                    <input type="text" placeholder="이메일 아이디" id="email_id1" required> @
+                     <input type="text" id="email_id2">
+                    <select id="email_select" onChange="email_address_select();">
+                            <option value="">선택하세요</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="hanmail.net">hanmail.net</option>
+                            <option value="hotmail.com">hotmail.com</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                            <option value="empas.com">empas.com</option>
+                            <option value="dreamwiz.com">dreamwiz.com</option>
+                            <option value="freechal.com">freechal.com</option>
+                            <option value="lycos.co.kr">lycos.co.kr</option>
+                            <option value="korea.com">korea.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="hanmir.com">hanmir.com</option>
+                            <option value="paran.com">paran.com</option>
+
+                            <option value="1">직접입력</option>
+                    </select>
+                    </div>  
+                    <div class="info_wrap">
+                    <label for="birth_year">생년월일</label>
+                    <div class="birth_wrap">
+                    <select id="birth_year" >
+                            <option value="" selected>년</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                    </select>
+                    <select id="birth_month" >
+                        <option value="" selected>월</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select id="birth_date" >
+                            <option value="" selected>일</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>     
+                        </select>
+                    </div>
+                    </div>
+                    <div class="final_check">
+                    
+                        <input type="checkbox" id="agree1">	
+                        <label for="agree1" class="height_30"><span>(선택) 쇼핑정보 E-mail 수신 동의</span> </label>  
                         <br>
-                        겨울에도 스케이트 보딩을 마음껏 즐겨보세요.
-                    </p>
-                    <button class="showmore sbtn_1">Show More</button>
-                </div>
+                        <input type="checkbox" id="agree2"> 
+                        <label for="agree2" class="height_30"><span>(선택) 쇼핑정보 SMS 수신 동의</span> </label>
+                        <br>
+                        <input type="checkbox" id="agree3"> 
+                        <label for="agree3" class="height_30"><span>본인은 만 14세 이상이며, 약관 및 개인정보 수집·이용 동의 내용을 확인하고, 동의합니다.</span> </label>
+                    </div>
 
-                <div class="img23_boxwrap2">
-                    <a href="#" target="_blank">
-                        <div class="release_img3">
-                            <div class="re_img2"></div>
-                         </div>
-                    </a>
-                     <p class="na_title">THE RIGHT CLEAT FOR THEIR GAME</p>
-                     <p>나이키 키즈의 특별한 플레이 스타일에 최적화된
-                         <br>
-                         디자인과 성능으로 최고의 게임을 완성하다.
-                     </p> 
-                     <button class="showmore sbtn_2">Show More</button>
-                </div>
-            </div>
-            
-        </div>
-        
-        
+                    <div class="final_btn">
+                    <input type="button" class="cancel" value="이전으로">
+                    <input type="submit" class="sign-up" value="회원가입">
+                    </div>
 
-        <div class="best_seller">
-            <p>NEW ARRIVALS</p>
-            <p class="arrival">올 겨울, 나이키 신제품으로 다양한 스타일을 연출해보세요.</p>
-
-            <div class="bestsell_box">
-                <div id="btn_left2" class="bestsell_btn"><span>〈</span></div>
-                <div id="btn_right2" class="bestsell_btn"><span>〉</span></div>
-
-                <div class="slide_section">
-                    <a href="#" target="_blank"><div class="goods Gimg1"></div></a>
-                    <a href="#" target="_blank"><div class="goods Gimg2"></div></a>
-                    <a href="#" target="_blank"><div class="goods Gimg3"></div></a>
-                    <a href="#" target="_blank"><div class="goods Gimg4"></div></a>
-                </div>
-                <div class="slide_section">
-                    <a href="#" target="_blank"><div class="goods2 Gimg1"></div></a>
-                    <a href="#" target="_blank"><div class="goods2 Gimg2"></div></a>
-                    <a href="#" target="_blank"><div class="goods2 Gimg3"></div></a>
-                    <a href="#" target="_blank"><div class="goods2 Gimg4"></div></a>
-                </div>
-                <div class="slide_section">
-                    <a href="#" target="_blank"><div class="goods3 Gimg1"></div></a>
-                    <a href="#" target="_blank"><div class="goods3 Gimg3"></div></a>
-                    <a href="#" target="_blank"><div class="goods3 Gimg3"></div></a>
-                    <a href="#" target="_blank"><div class="goods3 Gimg4"></div></a>
-                </div>
+                </form>
             </div>
         </div>
-        
-        <div class="banner_img">
-            
-            <div class="banner">
-            
-            
-            <div class="find_store">
-            <button class="last_btn">가까운 매장 찾기</button>
-            </div>
-
-            </div>
-
-          
-            <div class="banner">
-            <div class="see_nrc_club">
-            <button class="last_btn">NRC CLUB <br>자세히</button>
-            </div>
-            </div>
-        </div>
-
-        <a href="#"><div class="last_img">
-            <img src="img/nrc.png" alt="">
-        </div></a>
-
         <footer>
             <div class="news_letter">
                 <span>최신 소식 받아보기</span>
@@ -1264,139 +844,9 @@
             </div>
            
         </footer>
-        </div>
+
     <script>
-        $(document).ready(function(){
-            $('.slide').eq(0).css({
-                left:0
-            });
-            $('.slide_section').eq(0).css({
-                left:0
-            });
-            auto_interval();
-
-            var slide_interval = 800;
-            var index = 1;
-            var index2 = 1;
-            $('#btn_right').click(function(){ 
-                btn_init();
-                slide_move((index - 1) % $('.slide').length, '-100%', index % $('.slide').length,'100%');
-                index++;
-            });
-
-            $('#btn_left').click(function(){
-                btn_init();
-                index--; 
-                slide_move(index % $('.slide').length, '100%', (index - 1) % $('.slide').length, '-100%' );
-            });
-            
-            $('#btn_right2').click(function(){
-                btn_init();
-                slide_move2((index2 - 1) % $('.slide_section').length, '-100%', index2 % $('.slide_section').length,'100%')
-                index2++;
-            });
-            $('#btn_left2').click(function(){
-                btn_init();
-                index2--; 
-                slide_move2(index2 % $('.slide_section').length, '100%', (index2 - 1) % $('.slide_section').length, '-100%' );
-            });
-
-            //---------------------------------------------------------------
-            function btn_init(){
-                $('.btn_slide, .bestsell_btn').css('pointer-events','none');
-                $('.slide_section > a').css('pointer-events','none');
-                setTimeout(function(){
-                    $('.btn_slide, .bestsell_btn').css('pointer-events','auto');
-                    $('.slide_section > a').css('pointer-events','auto');
-                },slide_interval);
-
-                // $('.btn_slide, .bestsell_btn').attr('disabled', true);
-            }
-            function slide_move(now_index, now_pos, next_index, next_pos){
-                $('.slide').eq(now_index).animate({
-                    left: now_pos
-                },slide_interval);
-
-                $('.slide').eq(next_index).css({
-                    left:next_pos
-                }).animate({
-                    left:0,
-                },slide_interval);
-            }
-            
-            // ----------------------------------------------------------------
-            function slide_move2(now_index, now_pos, next_index, next_pos){
-                $('.slide_section').eq(now_index).animate({
-                    left: now_pos
-                },slide_interval);
-
-                $('.slide_section').eq(next_index).css({
-                    left:next_pos
-                }).animate({
-                    left:0,
-                },slide_interval);
-            }
-            //--------------------------------------------------------------------
-            var timer;
-            function auto_interval(){
-                timer = setInterval(function(){
-                    $('#btn_right').trigger('click');
-                },3000);
-            }
-
-              $('.slide_box').hover(function(){
-                clearInterval(timer);
-            }, function(){
-                auto_interval();
-            });
-            //-----------------------------------------------------------------------
-            var direction;
-            var scrollposition = $('.content').offset().top -200;
-
-            var scrollmove;
-                $(window).on("mousewheel DOMMouseScroll", function(e){
-                    // e.preventDefault();
-                    
-                    // if(event.wheelDelta){
-                    //     direction = event.wheelDelta / 120;
-                    scrollmove = $(document).scrollTop();
-                    if(scrollmove >= scrollposition){
-
-                        $('.wrap').css({
-                            background: "rgba(0,0,0,0.7)",
-                            transition: "all .4s"
-                        })
-                        $('.logo').css({
-                            background: "url('img/logo_white.png') no-repeat",
-                            backgroundSize:"contain",
-                            transition: "all .4s"
-                        })
-                    }else{                       
-                        $('.wrap').css({
-                            background: "transparent"
-                        })
-                        $('.logo').css({
-                            width:118+"px",
-                            height: 100+"px",
-                            background: "url('img/logo.png') no-repeat",
-                            backgroundSize:"contain",                        
-                            transition: "all .4s"
-                        })
-                    }
-                    
-                    var windowWidth = $(window).width();
-                    if(windowWidth < 768){
-                        $('.logo').css({
-                            width:'70px',
-                            height:'50px',
-                            background: "url('img/logo.png') no-repeat",
-                            backgroundSize:"contain",                        
-                        })
-                    }
-                        
-                });      
-        });
-              
+        
     </script>
 </body>
 </html>
