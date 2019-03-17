@@ -129,7 +129,7 @@
         border:1px solid #ccc;
         color:#595959;
         font-family: 'Noto Sans KR', sans-serif;
-        background:url('img/list_down.png') no-repeat;
+        background:url('../img/list_down.png') no-repeat;
         background-position: right;
         background-size: contain;
         -moz-appearance:none; /* Firefox */
@@ -315,7 +315,7 @@
         right:0;
         top:13px;
         margin-right: 15px;
-        background:url('img/list_onoff.png') no-repeat;
+        background:url('../img/list_onoff.png') no-repeat;
     }
     .category_onoff.close{
         background-position: -19px 0;
