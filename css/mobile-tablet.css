@@ -9,7 +9,7 @@
     .logo{
         width:70px;
         height:50px;
-        background: url('img/logo.png') no-repeat;
+        background: url('../img/logo.png') no-repeat;
         background-size: contain;
         top:45px;
     }
@@ -20,9 +20,93 @@
         background:#fff;
         height:80px;
     }
-    .slide_box{
-        margin-top:80px;
+    .slide_box{margin-top:80px; height:380px};
+    .slide_img .img1{background:url('../img/header_slide1_tablet.png')no-repeat;}
+    .slide_img .img2{background:url('../img/header_slide2_tablet.png')no-repeat;}
+    .slide_img .img3{background:url('../img/header_slide3_tablet.png')no-repeat;}
+    .slide_img .img4{background:url('../img/header_slide4_tablet.png')no-repeat;}
+    .img3_boxwrap{
+        width:30%;
+        height:268px;
+        padding:0 10px 0;
     }
+    .img3-1,
+    .img3-2,
+    .img3-3{
+        background-size: cover;
+        background-position: center;
+    }
+    .boxwrap_p{
+        height:112px;
+        font-size:16px;
+    }
+    .boxwrap_p > p{
+        margin-top:20px;
+    }
+    .collection_btn{
+        width:70%;
+        font-size: 13px;
+    }
+    .btn_slide{
+       width:10%;
+       font-size:70px;
+   }
+   .showmore2{
+       display: none;
+   }
+   .img23_box{
+    padding:28px;
+    }
+    .img23_boxwrap1,
+    .img23_boxwrap2{
+        display: block;
+        font-size:0.875em;
+    }
+
+    .release_img1{background:url('../img/air_jordan33_tablet.png')}
+    .release_img1-2{background:url('../img/apple_watch_tablet.png')}
+    .release_img1, .release_img1-2{
+        height:380px;
+    }
+    .re_img img{
+        transform: scale(1.5);
+    }
+    .re_img1,
+    .re_img2{
+        height:335px;
+    }
+    .na_title{
+        font-size:1.5em;
+    }
+   .slide_section{
+       margin-left:23px;
+   }
+   .only_font{
+       line-height: 110px;
+   }
+   .only_font > p{
+       min-width: auto;
+       letter-spacing: 12px;
+   }
+   .bestsell_box{
+       width:auto;
+   }
+   .banner_img{
+       padding:0;
+       margin-bottom: 0;
+   }
+   .banner{
+       width:50%;
+       padding:0;
+       float:left;
+   }
+   .find_store,
+   .see_nrc_club{
+       height:200px;
+   }
+   .last_btn{
+       font-weight: normal;
+   }
     nav ul{
         display: none;
     }
@@ -116,10 +200,9 @@
     }
     .mobile_menu > ul{
         position: absolute;
-        top:80px;
     }
     .show{
-        left:50%;
+        left:20%;
     }
     .hide{
         left:100%;

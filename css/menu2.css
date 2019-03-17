@@ -1,9 +1,4 @@
-*{
-    margin:0; padding:0;
-}
- p,span,a{
-     font-family: 'Noto Sans KR', sans-serif;
-}
+
 .ham_box{
     display: none;
     cursor: pointer;
@@ -12,7 +7,6 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     }
-button,input,select{outline:none;}
 .wrap{
     border-bottom:1px solid #eaeaea;
 }
@@ -31,7 +25,7 @@ header{
     font-weight: bold;
 }
 .top > ul > li:first-child::before{
-    content:url('img/cart.png');
+    content:url('../img/cart.png');
     display: inline-block;
     background-size:20px 17px;
     position: relative;
