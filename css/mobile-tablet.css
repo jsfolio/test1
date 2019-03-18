@@ -63,9 +63,9 @@
         font-size:0.875em;
     }
 
-    .release_img1{background:url('../img/air_jordan33_tablet.png')}
-    .release_img1-2{background:url('../img/apple_watch_tablet.png')}
-    .release_img1, .release_img1-2{
+    .re_img_jordan{background:url('../img/air_jordan33_tablet.png')}
+    .re_img_applewatch{background:url('../img/apple_watch_tablet.png')}
+    .release_img{
         height:380px;
     }
     .re_img img{

@@ -73,16 +73,15 @@
             font-weight: bold;
         }
 
-        .re_img img,
         .last_img img{
             max-width: 100%; 
             width /***/: auto; /* IE8 */
             height: auto;
             vertical-align: bottom;
         }
-        .release_img1{background:url('../img/air_jordan33.png')}
-        .release_img1-2{background:url('../img/apple_watch.png')}
-        .release_img1, .release_img1-2{
+        .re_img_jordan{background:url('../img/air_jordan33.png')}
+        .re_img_applewatch{background:url('../img/apple_watch.png')}
+        .release_img{
             position: relative;
             width:100%;
             height:658px;
@@ -93,42 +92,35 @@
             left:19%;
         }
         .showmore2{
+            display: inline-block;
+            position: absolute;
+            top:50%;
+            left:30%;
             width:150px;
+            margin-bottom:15px;
+            padding:10px 15px;
             background-color: #000;
             border:none;
             border-radius:1px;
             color:#fff;
-            padding:10px 15px;
             box-sizing: border-box;
             text-align: center;
-            text-decoration: none;
-            display: inline-block;
+            text-decoration: none; 
             font-size: 16px;
-            
-            margin-bottom:15px;
-            cursor: pointer;
-          
             transition:all .3s ease;
-        
-            position: absolute;
-            top:50%;
-            left:30%;
         }
-        .sbtn_3{
+        .sbtn_3,.sbtn_4{
             margin-top:50px;
         }
-        .sbtn_4{
-            margin-top:50px;
-        }
+
         .showmore2:hover{
             background-color:#fff;
             color:#000;
             border:1px solid;
             box-sizing: border-box;
-        }
-      
+        }   
         /* --------------------------------------- */
-        .img23_box{
+        .air_kidgame_box{
             text-align: center;
         }
         .img23_boxwrap1,
@@ -140,9 +132,8 @@
         .img23_boxwrap2{
             margin-left:20px;
         }
-        .release_img2,.release_img3{
-            overflow: hidden;
-            
+        .ak_goodsbox{
+            overflow: hidden;        
         }
         .re_img1{
             background:url('../img/release_img1.png') no-repeat;
@@ -157,13 +148,8 @@
             height:402px;
             transition:all .35s;
         }
-        .release_img2:hover .re_img1{
-            transform: scale(1.1);
-        }
-        .release_img2:hover .release_img2{
-            transform: scale(0.8);
-        }
-        .release_img3:hover .re_img2{
+        .ak_goodsbox:hover .re_img1,
+        .ak_goodsbox:hover .re_img2{
             transform: scale(1.1);
         }
 
@@ -191,7 +177,6 @@
         .showmore:hover{
             background-color:#fff;
             color:#000;
-            /* border:1px solid; */
             box-sizing: border-box;
         }
         .men_women_kid{   
