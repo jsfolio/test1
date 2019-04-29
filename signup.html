@@ -26,207 +26,91 @@
     <link rel="stylesheet" media="(min-width:768px) and (max-width:1023px)" href="css/tablet-pc.css" />
     <link rel="stylesheet" media="(min-width:1024px) and (max-width:1199px)" href="css/pc.css" />
     <script src="js/mobile_menu.js"></script>
+    <script src="js/goods_script.js"></script>
     <title>NIKE │ 회원가입</title>
     <style>
-        .content{
-            max-width:1200px;
-            margin:0 auto;
-            margin-top:134px;
-        }
-        .form_wrap{
-            width:100%;
-            margin:0 auto;
-        }
+        .content{ max-width:1200px;margin:0 auto; margin-top:134px;}
+        .form_wrap{ width:100%;margin:0 auto;}
         .form_top{
-            height:50px;
-            margin:50px 0 25px;
-            text-align: left;
-            border-bottom: 2px solid #393939; 
+            height:50px;margin:50px 0 25px;
+            text-align: left; border-bottom: 2px solid #393939; 
         }
-        .form_top > p{
-            font-size:25px;
-            font-weight: bold;
-            letter-spacing: -1px;
-        }
+        .form_top > p{ font-size:25px; font-weight: bold;letter-spacing: -1px;}
         .sign-up-top{
-            width:100%;
-            height:216px;
-            margin:0 auto;
+            width:100%; height:216px;  margin:0 auto;
             background:url('img/sign_up_img/signup_top.png') no-repeat;
         }
-        #sign-up-form{
-            margin-left:140px;
-        }
-     
+        #sign-up-form{margin-left:140px;}
         .info_wrap{
-            width:100%;
-            line-height: 50px;
-            overflow: hidden;
-            padding:8px 0 8px 0;
-            border-bottom:1px solid #d3d3d3;
-            box-sizing: border-box;
+            width:100%;padding:8px 0 8px 0;
+            line-height: 50px;border-bottom:1px solid #d3d3d3;
+            overflow: hidden; box-sizing: border-box;
         }
-        label{
-            line-height: 50px;
-            float: left;
-        }
-        .final_check label{
-            width: 100%;
-        }
-        label > p {
-            font-size:14px;
-            margin-left:30px;
-        }
-        span.asterisk{
-            color:#ff0000;
-            vertical-align: middle;
-        }
+        label{line-height: 50px;float: left;}
+        .final_check label{ width: 100%;}
+        label > p { font-size:14px; margin-left:30px;}
+        span.asterisk{color:#ff0000; vertical-align: middle;}
         input[type=text], input[type=password] {
-            width:50%;
-            height:30px;
-          background:#f1f1f1;
-            padding:10px;
-            border:1px solid #d3d3d3;
-            line-height: 10px;
-            box-sizing: border-box;
-          
+            width:50%; height:30px;padding:10px;
+            border:1px solid #d3d3d3; line-height: 10px; background:#f1f1f1; box-sizing: border-box;
         }
-        #email_id1, #email_id2{
-            width:120px;
-            line-height: 10px;
-            
-        }
+        #email_id1, #email_id2{ width:120px; line-height: 10px;}
         input.phone_num1,input.phone_num2,input.phone_num3{
-            width:70px;
-            height:30px;
-            padding:10px;
-            background:#f1f1f1;
-            border:1px solid #e4e4e4;
-            box-sizing: border-box;
+            width:70px;height:30px;   padding:10px;
+            border:1px solid #e4e4e4;  background:#f1f1f1; box-sizing: border-box;       
         }
         .id_check{
             display: inline-block;
-            width:100px;
-            height:30px;
-            line-height: 30px;
-            background:#000;
-            color:#fff;
-            border:none;
-            outline: none;
-            cursor: pointer;
+            width:100px; height:30px;
+            line-height: 30px;color:#fff;background:#000;
+            border:none;outline: none;cursor: pointer;
         }
-        #email_select{
-            width:120px;
-            height:30px;
-            vertical-align: middle;       
-        }
-        input[type=text]:focus, input[type=password]:focus {
-             background-color: #ddd;
-             outline: none;
-        }
-        .birth_wrap{
-            display: inline-block;
-            line-height: 50px;
-        }
+        #email_select{width:120px; height:30px; vertical-align: middle; }
+        input[type=text]:focus, input[type=password]:focus { background-color: #ddd;}
+        .birth_wrap{display: inline-block; line-height: 50px;}
         #birth_year, #birth_month, #birth_date{
-            width:80px;
-            height:30px;
-            padding:5px;
-            background:#f1f1f1;
-            border:1px solid #d3d3d3;
-            vertical-align: middle;
-            box-sizing: border-box;
-        
+            width:80px; height:30px;  padding:5px;
+            border:1px solid #d3d3d3;background:#f1f1f1; vertical-align: middle; box-sizing: border-box;
         }   
         
-        .final_check{
-            position: relative;
-        }
-        .final_check input[type="checkbox"]{
-            position: absolute;
-            display: none;
-        }
+        .final_check{position: relative;}
+        .final_check input[type="checkbox"]{ display: none; position: absolute; }
         .final_check input[type="checkbox"] + label{
-            display: inline-block;
-            position: relative;
-            cursor: pointer;
+            display: inline-block;position: relative;
             -webkit-user-select: none; 
             -moz-user-select: none;
-             -ms-user-select: none;
-             color:#777;
-           
-             font-size:15px;
+            -ms-user-select: none;
+            font-size:15px;color:#777;cursor: pointer;   
         }
-        .height_30{
-            line-height: 30px;
-        }
+        .height_30{line-height: 30px;}
         .final_check input[type="checkbox"] + label:before{
             content:"";
             display: inline-block;
-            width:21px;
-            height:21px;
-            line-height: 21px;
-            margin:-2px 8px 0 0;
-            text-align: center;
-            vertical-align: middle;
-            background:#fafafa;
-            border:1px solid #cacaca;  
+            width:21px;height:21px; margin:-2px 8px 0 0;
+            line-height: 21px;text-align: center;vertical-align: middle;  
+            border:1px solid #cacaca;   background:#fafafa;
         }
-        .final_check input[type="checkbox"]:checked + label:before{
-            content: "\2714";
-            color:#fff;
-            background:#393939;
-        }
-        
-        .final_btn{
-            margin:100px auto;
-            text-align: center;
-            box-sizing: border-box;
-        }
+        .final_check input[type="checkbox"]:checked + label:before{content: "\2714";color:#fff; background:#393939;}
+        .final_btn{margin:100px auto;text-align: center;box-sizing: border-box;}
         .cancel{
-            display: inline-block;
-            width:150px;
-            height:48px;
-            background:#fff;
-            border:1px solid #797979;
-            font-size:17px;
-            cursor: pointer;
-            margin-right:15px;
+            display: inline-block; margin-right:15px;
+            width:150px; height:48px;
+            background:#fff; border:1px solid #797979;
+            font-size:17px;cursor: pointer;
         }
         .sign-up{
             display: inline-block;
-            width:150px;
-            height:48px;
-            background:#000;
-            color:#fff;
-            border:1px solid ;
-            font-size:17px;
-            cursor: pointer;
-            margin-left:15px;
+            width:150px; height:48px; margin-left:15px;
+            font-size:17px;border:1px solid ;background:#000;color:#fff;cursor: pointer; 
         }
         @media (min-width:768px) and (max-width:1023px){
-            #sign-up-form{
-                margin-left:0;
-                padding:0 28px 0;
-                box-sizing: border-box;
-            }
-        
+            #sign-up-form{margin-left:0; padding:0 28px 0; box-sizing: border-box;}
         }
         @media (min-width:481px) and (max-width:767px){
-            #sign-up-form{
-                margin-left:0;
-                padding:0 28px 0;
-                box-sizing: border-box;
-            }
-        
+            #sign-up-form{ margin-left:0;padding:0 28px 0;box-sizing: border-box;}
         }
-
         @media (max-width:480px){
-            #sign-up-form{
-                margin-left:0;
-                padding:0 28px 0;
-                box-sizing: border-box;
-            }
+            #sign-up-form{margin-left:0;padding:0 28px 0;box-sizing: border-box;}
         
         }
 
@@ -234,482 +118,501 @@
     </style>
 </head>
 <body>
-        <div id="myModal" class="loginmodal">
-                <div id="login_modal-content">
-                    <form name="form" id="login-form" action="#" method="post">
-                        <div class="login_form_top">
-                            <div class="login_logo" ></div>
-                                <p>로그인</p>
-                            </div>
-                        <div class="login_info_wrap">
-                        <label for="login_id">아이디</label>
-                        <input type="text" placeholder="아이디" id="login_id" required>
-                        </div>
-    
-                        <div class="login_info_wrap">
-                        <label for="login_psw">비밀번호</label>
-                        <input type="password" placeholder="비밀번호" id="login_psw" required>
-                        </div>
-                    
-                        <input type="checkbox"><p class="remember">remember me</p>
-                        <p class="find">아이디/비밀번호 찾기</p>
-                        <div class="center_align">
-                     
-                        <button class="login_btn">로그인</button>
-                        <p class="login_signup">회원가입</p>
-                        </div>                   
-                    </form>
-                    <span class="modalclose">&times;</span> 
-                </div>
-                </div>
-        <div class="wrap">
-            <header>
-                <div class="top">
-                    <ul>
-                        <li><a href="#login_modal-content" class="login">주문조회</a></li>
-                        <li><a href="signup.html">회원가입</a></li>
-                        <li><a href="#login_modal-content" class="login">로그인</a></li>
-                        <li><a href="signup.html">도움말</a></li>
-                    </ul>
-                </div>
-                <nav>  
-                     <a href="index.html"><div class="logo"></div></a>
-                    <ul>
-                        <li><a href="men_best.html">MEN</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li border_none"><a href="men_shoes.html">신발</a>
-                                    <ul>
-                                        <li><a href="men_shoes.html">신발 전체</a></li>
-                                        <li><a href="men_all_clothes.html">라이프스타일</a></li>
-                                        <li><a href="men_best.html">러닝</a></li>
-                                        <li><a href="men_shoes.html">트레이닝 & 짐</a></li>
-                                        <li><a href="men_all_clothes.html">농구</a></li>
-                                        <li><a href="men_best.html">조던</a></li>
-                                        <li><a href="men_all_clothes.html">축구</a></li>
-                                        <li><a href="men_shoes.html">스케이트보딩</a></li>
-                                        <li><a href="men_all_clothes.html">골프</a></li>
-                                        <li><a href="men_shoes.html">테니스</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_all_clothes.html">의류</a>
-                                    <ul>
-                                        <li><a href="men_all_clothes.html">의류 전체</a></li>
-                                        <li><a href="men_shoes.html">후디 & 크루</a></li>
-                                        <li><a href="men_best.html">아우터웨어</a></li>
-                                        <li><a href="men_shoes.html">팬츠 & 타이츠</a></li>
-                                        <li><a href="men_all_clothes.html">탑 & 티셔츠</a></li>
-                                        <li><a href="men_best.html">숏 팬츠</a></li>
-                                        <li><a href="men_all_clothes.html">나이키 프로</a></li>
-                                        <li><a href="men_shoes.html">가방</a></li>
-                                        <li><a href="men_all_clothes.html">양말</a></li>
-                                        <li><a href="men_shoes.html">모자 & 용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_sports.html">스포츠</a>
-                                    <ul>
-                                        <li><a href="men_all_clothes.html">러닝</a></li>
-                                        <li><a href="men_best.html">트레이닝 & 짐</a></li>
-                                        <li><a href="men_all_clothes.html">농구</a></li>
-                                        <li><a href="men_shoes.html">축구</a></li>
-                                        <li><a href="men_best.html">스케이트보딩</a></li>
-                                        <li><a href="men_shoes.html">골프</a></li>
-                                        <li><a href="men_all_clothes.html">테니스</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_best.html">브랜드</a>
-                                    <ul>
-                                        <li><a href="men_best.html">Nike Sportswear</a></li>
-                                        <li><a href="women_best.html">NikeLab</a></li>
-                                        <li><a href="men_best.html">Jordan</a></li>
-                                        <li><a href="women_best.html">NBA</a></li>
-                                        <li><a href="men_best.html">FAN GEAR</a></li>
-                                        <li><a href="women_best.html">ACG</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li menu_img"><a href="men_shoes.html">
-                                    <img src="img/men_img.png" alt=""></a>
-                                   <p>조던 WHY NOT ZERO.1 LOW</p>
-                                   <P>'SMOKE GREY/BLACK'</p>
-                                </li>
-                            </ul>
-                            </div>
-                        </li>
-                        <li><a href="women_best.html">WOMEN</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li "><a href="women_shoes.html">신발</a>
-                                    <ul>
-                                        <li><a href="women_shoes.html">신발 전체</a></li>
-                                        <li><a href="women_all_clothes.html">라이프스타일</a></li>
-                                        <li><a href="women_best.html">러닝</a></li>
-                                        <li><a href="women_all_clothes.html">트레이닝 & 짐</a></li>
-                                        <li><a href="women_shoes.html">골프</a></li>
-                                        <li><a href="women_best.html">테니스</a></li>
-    
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="women_all_clothes.html">의류</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">의류 전체</a></li>
-                                        <li><a href="women_shoes.html">팬츠 & 타이츠</a></li>
-                                        <li><a href="women_best.html">후디 & 크루</a></li>
-                                        <li><a href="women_best.html">아우터웨어</a></li>
-                                        <li><a href="women_all_clothes.html">탑 & 티셔츠</a></li>
-                                        <li><a href="women_shoes.html">스포츠 브라</a></li>
-                                        <li><a href="women_best.html">숏 팬츠</a></li>
-                                        <li><a href="women_shoes.html">스커트 & 드레스</a></li>
-                                        <li><a href="women_all_clothes.html">가방</a></li>
-                                        <li><a href="women_best.html">양말</a></li>
-                                        <li><a href="women_all_clothes.html">모자 & 용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="women_sports.html">스포츠</a>
-                                    <ul>
-                                        <li><a href="women_shoes.html">러닝</a></li>
-                                        <li><a href="women_best.html">트레이닝 & 짐</a></li>
-                                        <li><a href="women_shoes.html">골프</a></li>
-                                        <li><a href="women_all_clothes.html">테니스</a></li>
-                                        <li><a href="women_best.html">요가</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="women_best.html">브랜드</a>
-                                    <ul>
-                                        <li><a href="men_best.html">Nike Sportswear</a></li>
-                                        <li><a href="women_best.html">NikeLab</a></li>
-                                        <li><a href="men_best.html">ACG</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li menu_img"><a href="women_best.html">
-                                    <img src="img/women_img.png" alt=""></a>
-                                    <p>높아진 중창과 낮아진 발목라인</p>
-                                    <p>에어 포스1 세이지 로우</p>
-                                
-                                </li>
-                            </ul>
-                            </div>
-                        </li>
-                        <li><a href="kids_best.html">KIDS</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li"><a href="kids_best.html">사이즈별</a>
-                                    <ul>
-                                        <li class="kids_size" ><a href="kids_best.html"><span class="bold">신발</span></a>
-                                            <ul>
-                                                <li class="kids"><a href="women_all_clothes.html">베이비(160mm 이하)</a></li>
-                                                <li class="kids"><a href="kids_best.html">리틀키즈(165-220mm)</a></li>
-                                                <li class="kids"><a href="women_shoes.html">주니어(225-250mm)</a></li>
-                                            </ul>
-                                        </li>
-                                        
-                                        <li class="kids_size"><a href="kids_best.html"><span class="bold">의류</span></a>
-                                            <ul>
-                                                <li class="kids"><a href="women_all_clothes.html">베이비(0-4세)</a></li>
-                                                <li class="kids"><a href="kids_best.html">리틀키즈(4-7세)</a></li>
-                                                <li class="kids"><a href="women_shoes.html">주니어(8-13세)</a></li>
-                                            </ul>
-                                        </li>
-    
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="kids_best.html">스포츠</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">러닝</a></li>
-                                        <li><a href="kids_best.html">축구</a></li>
-                                        <li><a href="women_shoes.html">농구</a></li>
-                                        <li><a href="kids_best.html">트레이닝 & 짐</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="kids_best.html">신발</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">신발 전체</a></li>
-                                        <li><a href="kids_best.html">라이프스타일</a></li>
-                                        <li><a href="women_shoes.html">러닝</a></li>
-                                        <li><a href="kids_best.html">축구</a></li>
-                                        <li><a href="women_all_clothes.html">농구</a></li>
-                                        <li><a href="kids_best.html">샌들 & 슬리퍼</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="kids_best.html">의류</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">의류 전체</a></li>
-                                        <li><a href="kids_best.html">후디 & 크루</a></li>
-                                        <li><a href="women_shoes.html">팬츠 & 타이츠</a></li>
-                                        <li><a href="kids_best.html">아우터웨어</a></li>
-                                        <li><a href="women_all_clothes.html">탑 & 티셔츠</a></li>
-                                        <li><a href="kids_best.html">세트</a></li>
-                                        <li><a href="women_shoes.html">숏 팬츠</a></li>
-                                        <li><a href="kids_best.html">베이스 레이어</a></li>
-                                        <li><a href="women_all_clothes.html">양말</a></li>
-                                        <li><a href="kids_best.html">가방 & 모자 & 용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li menu_img"><a href="kids_best.html">
-                                    <img src="img/kid_img.png" alt=""></a>
-                                    <p>NBA 리틀 팬들을 위한</p>
-                                    <P>에어 포스 1 NBA</P>
-                                
-                                </li>
-                            </ul>
-                                </div>
-                        </li>
-                        <li><a href="women_best.html">SPORTS</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li"><a href="women_best.html">축구</a>
-                                    <ul>
-                                        <li><a href="women_sports.html">
-                                            <img src="img/football_img.png" alt="">
-                                        </a></li>
-                                        <li><a href="men_sports.html">신발</a></li>
-                                        <li><a href="women_sports.html">의류</a></li>
-                                        <li><a href="women_all_clothes.html">용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_sports.html">러닝</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">
-                                            <img src="img/run_img.png" alt="">
-                                        </a></li>
-                                        <li><a href="men_shoes.html">신발</a></li>
-                                        <li><a href="men_all_clothes.html">의류</a></li>
-                                        <li><a href="women_sports.html">용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_sports.html">농구</a>
-                                    <ul>
-                                        <li><a href="women_best.html">
-                                            <img src="img/basket_img.png" alt="">
-                                        </a></li>
-                                        <li><a href="men_shoes.html">신발</a></li>
-                                        <li><a href="men_all_clothes.html">의류</a></li>
-                                        <li><a href="women_sports.html">용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_best.html">트레이닝</a>
-                                    <ul>
-                                        <li><a href="women_sports.html">
-                                            <img src="img/train_img.png" alt="">
-                                        </a></li>
-                                        <li><a href="men_shoes.html">신발</a></li>
-                                        <li><a href="men_all_clothes.html">의류</a></li>
-                                        <li><a href="men_sports.html">용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_best.html">기타 스포츠</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">아웃도어</a></li>
-                                        <li><a href="women_best.html">골프</a></li>
-                                        <li><a href="women_all_clothes.html">테니스</a></li>
-                                        <li><a href="women_best.html">스케이트보딩</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            </div>
-                       </li>
-                        <li><a href="men_best.html">BRANDS</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li border_none"><a href="men_best.html">
-                                    <img src="img/airforce_img.png" alt="">
-                                </a>
-                                </li>
-                                <li class="sub_li border_none"><a href="women_best.html">
-                                    <img src="img/jordan_img.png" alt="">
-                                </a>
-                                </li>
-                                <li class="sub_li border_none"><a href="men_best.html">
-                                    <img src="img/acg_img.png" alt="">
-                                </a>
-                                </li>
-                                <li class="sub_li border_none"><a href="women_best.html">
-                                    <img src="img/nba_img.png" alt="">
-                                </a>
-                                </li>
-                                <li class="sub_li border_none"><a href="men_best.html">
-                                    <img src="img/lebron_img.png" alt="">
-                                </a>
-                                </li>
-                            </ul>
-                            </div>
-                        </li>
-                        <li><a href="signup.html">CUSTOMIZE</a></li>
-                  
-                   </ul>
-                   
-                    <div class="search_box"> 
-                        <div class="icon"></div>
-                        <input type="search" placeholder="search">
-                   </div>
-                   <div class="ham_box"> 
-                    <div class="menu_box">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+    <div id="skip">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#menu">메뉴 바로가기</a>
+    </div>
+    <div id="myModal" class="loginmodal">
+        <h2 class="screen_out">나이키 로그인 모달창</h2>
+        <div id="login_modal-content">
+            <form name="form" id="login-form" action="#" method="post">
+                <div class="login_form_top">
+                    <div class="login_logo" ></div>
+                        <p>로그인</p>
                     </div>
-                
-                </nav>
-            </header>
+                <div class="login_info_wrap">
+                <label for="login_id">아이디</label>
+                <input type="text" placeholder="아이디" id="login_id" required>
+                </div>
+                <div class="login_info_wrap">
+                <label for="login_psw">비밀번호</label>
+                <input type="password" placeholder="비밀번호" id="login_psw" required>
+                </div>
+                <input type="checkbox"><p class="remember">remember me</p>
+                <p class="find">아이디/비밀번호 찾기</p>
+                <div class="center_align">
+                <button class="login_btn">로그인</button>
+                <p class="login_signup">회원가입</p>
+                </div>                   
+            </form>
+            <h2 class="screen_out">모달창 닫기</h2>
+            <span class="modalclose">&times;</span> 
         </div>
-        <div class="mobile_menu">
-            <ul>
-                <li class="search_back">
-                    
-                    <div class="m_search_box">   
-                        <div class="icon"></div>
-                        <input type="search" placeholder="search">
-                   </div></li>
-                <li><a href="#">
-                   Home</a>
-                </li>
+    </div>
+    <div class="wrap">
+        <header>
+            <div class="top">
+                <ul>
+                    <li><a href="#login_modal-content" class="login">주문조회</a></li>
+                    <li><a href="signup.html">회원가입</a></li>
+                    <li><a href="#login_modal-content" class="login">로그인</a></li>
+                    <li><a href="signup.html">도움말</a></li>
+                </ul>
+            </div>
+            <nav id="menu">  
+                <h2 class="screen_out">나이키 메인 메뉴</h2>
+                <a href="index.html"><div class="logo" title="나이키 코리아"></div></a>
+                <ul>
+                    <li><a href="men_best.html">MEN</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li border_none"><a href="men_shoes.html">신발</a>
+                                <ul>
+                                    <li><a href="men_shoes.html">신발 전체</a></li>
+                                    <li><a href="men_all_clothes.html">라이프스타일</a></li>
+                                    <li><a href="men_best.html">러닝</a></li>
+                                    <li><a href="men_shoes.html">트레이닝 & 짐</a></li>
+                                    <li><a href="men_all_clothes.html">농구</a></li>
+                                    <li><a href="men_best.html">조던</a></li>
+                                    <li><a href="men_all_clothes.html">축구</a></li>
+                                    <li><a href="men_shoes.html">스케이트보딩</a></li>
+                                    <li><a href="men_all_clothes.html">골프</a></li>
+                                    <li><a href="men_shoes.html">테니스</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_all_clothes.html">의류</a>
+                                <ul>
+                                    <li><a href="men_all_clothes.html">의류 전체</a></li>
+                                    <li><a href="men_shoes.html">후디 & 크루</a></li>
+                                    <li><a href="men_best.html">아우터웨어</a></li>
+                                    <li><a href="men_shoes.html">팬츠 & 타이츠</a></li>
+                                    <li><a href="men_all_clothes.html">탑 & 티셔츠</a></li>
+                                    <li><a href="men_best.html">숏 팬츠</a></li>
+                                    <li><a href="men_all_clothes.html">나이키 프로</a></li>
+                                    <li><a href="men_shoes.html">가방</a></li>
+                                    <li><a href="men_all_clothes.html">양말</a></li>
+                                    <li><a href="men_shoes.html">모자 & 용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_sports.html">스포츠</a>
+                                <ul>
+                                    <li><a href="men_all_clothes.html">러닝</a></li>
+                                    <li><a href="men_best.html">트레이닝 & 짐</a></li>
+                                    <li><a href="men_all_clothes.html">농구</a></li>
+                                    <li><a href="men_shoes.html">축구</a></li>
+                                    <li><a href="men_best.html">스케이트보딩</a></li>
+                                    <li><a href="men_shoes.html">골프</a></li>
+                                    <li><a href="men_all_clothes.html">테니스</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_best.html">브랜드</a>
+                                <ul>
+                                    <li><a href="men_best.html">Nike Sportswear</a></li>
+                                    <li><a href="women_best.html">NikeLab</a></li>
+                                    <li><a href="men_best.html">Jordan</a></li>
+                                    <li><a href="women_best.html">NBA</a></li>
+                                    <li><a href="men_best.html">FAN GEAR</a></li>
+                                    <li><a href="women_best.html">ACG</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li menu_img"><a href="men_shoes.html">
+                                <img src="img/men_img.png" alt=""></a>
+                                <p>조던 WHY NOT ZERO.1 LOW</p>
+                                <P>'SMOKE GREY/BLACK'</p>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="women_best.html">WOMEN</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li "><a href="women_shoes.html">신발</a>
+                                <ul>
+                                    <li><a href="women_shoes.html">신발 전체</a></li>
+                                    <li><a href="women_all_clothes.html">라이프스타일</a></li>
+                                    <li><a href="women_best.html">러닝</a></li>
+                                    <li><a href="women_all_clothes.html">트레이닝 & 짐</a></li>
+                                    <li><a href="women_shoes.html">골프</a></li>
+                                    <li><a href="women_best.html">테니스</a></li>
 
-                <li><a href="#">
-                   MEN</a>
-                    <ul class="sub_hide">
-                        <li><a href="#">BEST</a></li>
-                        <li><a href="men_shoes.html">신발</a></li>
-                        <li><a href="men_all_clothes.html">의류</a></li>
-                        <li><a href="men_best.html">스포츠</a></li>
-                        <li><a href="men_shoes.html">브랜드</a></li>
-                        
-                    </ul>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="women_all_clothes.html">의류</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">의류 전체</a></li>
+                                    <li><a href="women_shoes.html">팬츠 & 타이츠</a></li>
+                                    <li><a href="women_best.html">후디 & 크루</a></li>
+                                    <li><a href="women_best.html">아우터웨어</a></li>
+                                    <li><a href="women_all_clothes.html">탑 & 티셔츠</a></li>
+                                    <li><a href="women_shoes.html">스포츠 브라</a></li>
+                                    <li><a href="women_best.html">숏 팬츠</a></li>
+                                    <li><a href="women_shoes.html">스커트 & 드레스</a></li>
+                                    <li><a href="women_all_clothes.html">가방</a></li>
+                                    <li><a href="women_best.html">양말</a></li>
+                                    <li><a href="women_all_clothes.html">모자 & 용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="women_sports.html">스포츠</a>
+                                <ul>
+                                    <li><a href="women_shoes.html">러닝</a></li>
+                                    <li><a href="women_best.html">트레이닝 & 짐</a></li>
+                                    <li><a href="women_shoes.html">골프</a></li>
+                                    <li><a href="women_all_clothes.html">테니스</a></li>
+                                    <li><a href="women_best.html">요가</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="women_best.html">브랜드</a>
+                                <ul>
+                                    <li><a href="men_best.html">Nike Sportswear</a></li>
+                                    <li><a href="women_best.html">NikeLab</a></li>
+                                    <li><a href="men_best.html">ACG</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li menu_img"><a href="women_best.html">
+                                <img src="img/women_img.png" alt=""></a>
+                                <p>높아진 중창과 낮아진 발목라인</p>
+                                <p>에어 포스1 세이지 로우</p>
+                            
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="kids_best.html">KIDS</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li"><a href="kids_best.html">사이즈별</a>
+                                <ul>
+                                    <li class="kids_size" ><a href="kids_best.html"><span class="bold">신발</span></a>
+                                        <ul>
+                                            <li class="kids"><a href="women_all_clothes.html">베이비(160mm 이하)</a></li>
+                                            <li class="kids"><a href="kids_best.html">리틀키즈(165-220mm)</a></li>
+                                            <li class="kids"><a href="women_shoes.html">주니어(225-250mm)</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="kids_size"><a href="kids_best.html"><span class="bold">의류</span></a>
+                                        <ul>
+                                            <li class="kids"><a href="women_all_clothes.html">베이비(0-4세)</a></li>
+                                            <li class="kids"><a href="kids_best.html">리틀키즈(4-7세)</a></li>
+                                            <li class="kids"><a href="women_shoes.html">주니어(8-13세)</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="kids_best.html">스포츠</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">러닝</a></li>
+                                    <li><a href="kids_best.html">축구</a></li>
+                                    <li><a href="women_shoes.html">농구</a></li>
+                                    <li><a href="kids_best.html">트레이닝 & 짐</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="kids_best.html">신발</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">신발 전체</a></li>
+                                    <li><a href="kids_best.html">라이프스타일</a></li>
+                                    <li><a href="women_shoes.html">러닝</a></li>
+                                    <li><a href="kids_best.html">축구</a></li>
+                                    <li><a href="women_all_clothes.html">농구</a></li>
+                                    <li><a href="kids_best.html">샌들 & 슬리퍼</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="kids_best.html">의류</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">의류 전체</a></li>
+                                    <li><a href="kids_best.html">후디 & 크루</a></li>
+                                    <li><a href="women_shoes.html">팬츠 & 타이츠</a></li>
+                                    <li><a href="kids_best.html">아우터웨어</a></li>
+                                    <li><a href="women_all_clothes.html">탑 & 티셔츠</a></li>
+                                    <li><a href="kids_best.html">세트</a></li>
+                                    <li><a href="women_shoes.html">숏 팬츠</a></li>
+                                    <li><a href="kids_best.html">베이스 레이어</a></li>
+                                    <li><a href="women_all_clothes.html">양말</a></li>
+                                    <li><a href="kids_best.html">가방 & 모자 & 용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li menu_img"><a href="kids_best.html">
+                                <img src="img/kid_img.png" alt=""></a>
+                                <p>NBA 리틀 팬들을 위한</p>
+                                <P>에어 포스 1 NBA</P>
+                            
+                            </li>
+                        </ul>
+                            </div>
+                    </li>
+                    <li><a href="women_best.html">SPORTS</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li"><a href="women_best.html">축구</a>
+                                <ul>
+                                    <li><a href="women_sports.html">
+                                        <img src="img/football_img.png" alt="">
+                                    </a></li>
+                                    <li><a href="men_sports.html">신발</a></li>
+                                    <li><a href="women_sports.html">의류</a></li>
+                                    <li><a href="women_all_clothes.html">용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_sports.html">러닝</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">
+                                        <img src="img/run_img.png" alt="">
+                                    </a></li>
+                                    <li><a href="men_shoes.html">신발</a></li>
+                                    <li><a href="men_all_clothes.html">의류</a></li>
+                                    <li><a href="women_sports.html">용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_sports.html">농구</a>
+                                <ul>
+                                    <li><a href="women_best.html">
+                                        <img src="img/basket_img.png" alt="">
+                                    </a></li>
+                                    <li><a href="men_shoes.html">신발</a></li>
+                                    <li><a href="men_all_clothes.html">의류</a></li>
+                                    <li><a href="women_sports.html">용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_best.html">트레이닝</a>
+                                <ul>
+                                    <li><a href="women_sports.html">
+                                        <img src="img/train_img.png" alt="">
+                                    </a></li>
+                                    <li><a href="men_shoes.html">신발</a></li>
+                                    <li><a href="men_all_clothes.html">의류</a></li>
+                                    <li><a href="men_sports.html">용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_best.html">기타 스포츠</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">아웃도어</a></li>
+                                    <li><a href="women_best.html">골프</a></li>
+                                    <li><a href="women_all_clothes.html">테니스</a></li>
+                                    <li><a href="women_best.html">스케이트보딩</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="men_best.html">BRANDS</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li border_none"><a href="men_best.html">
+                                <img src="img/airforce_img.png" alt="">
+                            </a>
+                            </li>
+                            <li class="sub_li border_none"><a href="women_best.html">
+                                <img src="img/jordan_img.png" alt="">
+                            </a>
+                            </li>
+                            <li class="sub_li border_none"><a href="men_best.html">
+                                <img src="img/acg_img.png" alt="">
+                            </a>
+                            </li>
+                            <li class="sub_li border_none"><a href="women_best.html">
+                                <img src="img/nba_img.png" alt="">
+                            </a>
+                            </li>
+                            <li class="sub_li border_none"><a href="men_best.html">
+                                <img src="img/lebron_img.png" alt="">
+                            </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="signup.html">CUSTOMIZE</a></li>
                 
-                </li>
-
-                <li><a href="#">
-                   WOMEN</a>
-                   <ul class="sub_hide">
-                        <li><a href="#">BEST</a></li>
-                        <li><a href="women_shoes.html">신발</a></li>
-                        <li><a href="women_all_clothes.html">의류</a></li>
-                        <li><a href="women_best.html">스포츠</a></li>
-                        <li><a href="women_shoes.html">브랜드</a></li>
-                   </ul>
-                </li>
-
-                <li><a href="#">
-                   KIDS</a>
-                   <ul class="sub_hide">
-                        <li><a href="#">BEST</a></li>
-                        <li><a href="women_shoes.html">신발</a></li>
-                        <li><a href="women_all_clothes.html">의류</a></li>
-                        <li><a href="women_best.html">스포츠</a></li>
-                        <li><a href="women_shoes.html">브랜드</a></li>
-                   </ul>
-                </li>
-
-                <li><a href="#">
-                   SPORTS</a>
-                   <ul class="sub_hide">
-                        <li><a href="#">축구</a></li>
-                        <li><a href="women_shoes.html">러닝</a></li>
-                        <li><a href="women_all_clothes.html">농구</a></li>
-                        <li><a href="women_best.html">트레이닝</a></li>
-                        <li><a href="women_shoes.html">기타 스포츠</a></li>
-                   </ul>
-                 </li>
-
-                <li><a href="#">
-                   BRANDS</a>
-                   <ul class="sub_hide">
-                        <li><a href="#">Air Force</a></li>
-                        <li><a href="women_shoes.html">Jordan</a></li>
-                        <li><a href="women_all_clothes.html">ACG</a></li>
-                        <li><a href="women_best.html">NBA</a></li>
-                        <li><a href="women_shoes.html">Lebron</a></li>
-                   </ul>
-                </li>
-
-                <li><a href="signup.html">
-                   CUSTOMIZE</a></li>
-            </ul>
+                </ul>
+                <h2 class="screen_out">상품 검색하기</h2>
+                <div class="search_box"> 
+                    <div class="icon"></div>
+                    <input type="search" placeholder="search">
+                </div>
+                <h2 class="screen_out_mobile">나이키 메인 메뉴</h2>
+                <div class="ham_box"> 
+                <div class="menu_box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             
-        </div>
-        <div class="panel-overlay"></div>   
-       <div class="content">
-            <div class="sign-up-top"></div>
+            </nav>
+        </header>
+    </div>
+    <div class="mobile_menu">
+        <ul>
+            <li class="search_back">
+                <h2 class="screen_out_mobile">상품 검색하기</h2>
+                <div class="m_search_box">   
+                    <div class="icon"></div>
+                    <input type="search" placeholder="search">
+                </div></li>
+            <li><a href="#">
+                Home</a>
+            </li>
 
-            <div class="form_wrap">
-                 
-                <form name="form" id="sign-up-form" action="#" method="post">
-                    <div class="form_top">
-                            <p>회원가입 정보 입력</p>
-                        </div>
-                    <div class="info_wrap">
-                    <label for="user_name"><span class="asterisk">*</span>이름</label>
-                    <input type="text" placeholder="이름을 입력하세요." id="user_name" required>
-                   </div>
-                   <div class="info_wrap">
-                    <label for="id"><span class="asterisk">*</span>아이디</label>
-                    <input type="text" placeholder="아이디를 입력하세요.(특수문자 입력 불가)" id="id" required>
-                    <input type="button" class="id_check" value="중복확인" onclick="id_check()">
-                    </div>
-                    <div class="info_wrap">
-                    <label for="psw"><span class="asterisk">*</span>비밀번호</label>
-                    <input type="password" placeholder="영문/숫자/특수문자 조합 8~16자" id="psw" required>
-                    </div>
-                    <div class="info_wrap">
-                    <label for="psw_chk"><span class="asterisk">*</span>비밀번호 확인</label>
-                    <input type="password" placeholder="비밀번호 확인" id="psw_chk" required>
-                    </div>
-                    <div class="info_wrap">
-                    <label for="phone"><span class="asterisk">*</span>휴대폰</label>
-                        <input type="text" class="phone_num1" id="phone">  -
-                        <input type="text" class="phone_num2"> -
-                        <input type="text" class="phone_num3">
-                     </div>
-                     <div class="info_wrap"> 
-                    <label for="email_id1">이메일</label>
-                    <input type="text" placeholder="이메일 아이디" id="email_id1" required> @
-                     <input type="text" id="email_id2">
-                    <select id="email_select" onChange="email_address_select();">
-                            <option value="">선택하세요</option>
-                            <option value="naver.com">naver.com</option>
-                            <option value="hanmail.net">hanmail.net</option>
-                            <option value="hotmail.com">hotmail.com</option>
-                            <option value="nate.com">nate.com</option>
-                            <option value="yahoo.co.kr">yahoo.co.kr</option>
-                            <option value="empas.com">empas.com</option>
-                            <option value="dreamwiz.com">dreamwiz.com</option>
-                            <option value="freechal.com">freechal.com</option>
-                            <option value="lycos.co.kr">lycos.co.kr</option>
-                            <option value="korea.com">korea.com</option>
-                            <option value="gmail.com">gmail.com</option>
-                            <option value="hanmir.com">hanmir.com</option>
-                            <option value="paran.com">paran.com</option>
+            <li><a href="#">
+                MEN</a>
+                <ul class="sub_hide">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="men_shoes.html">신발</a></li>
+                    <li><a href="men_all_clothes.html">의류</a></li>
+                    <li><a href="men_best.html">스포츠</a></li>
+                    <li><a href="men_shoes.html">브랜드</a></li>
+                    
+                </ul>
+            
+            </li>
 
-                            <option value="1">직접입력</option>
-                    </select>
-                    </div>  
-                    <div class="info_wrap">
-                    <label for="birth_year">생년월일</label>
-                    <div class="birth_wrap">
-                    <select id="birth_year" >
-                            <option value="" selected>년</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                            <option value="2017">2017</option>
-                            <option value="2016">2016</option>
-                            <option value="2015">2015</option>
-                            <option value="2014">2014</option>
-                            <option value="2013">2013</option>
-                            <option value="2012">2012</option>
-                            <option value="2011">2011</option>
-                            <option value="2010">2010</option>
-                            <option value="2009">2009</option>
-                            <option value="2008">2008</option>
-                            <option value="2007">2007</option>
-                            <option value="2006">2006</option>
-                            <option value="2005">2005</option>
-                            <option value="2004">2004</option>
-                            <option value="2003">2003</option>
-                            <option value="2002">2002</option>
-                            <option value="2001">2001</option>
-                            <option value="2000">2000</option>
-                    </select>
-                    <select id="birth_month" >
-                        <option value="" selected>월</option>
+            <li><a href="#">
+                WOMEN</a>
+                <ul class="sub_hide">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="women_shoes.html">신발</a></li>
+                    <li><a href="women_all_clothes.html">의류</a></li>
+                    <li><a href="women_best.html">스포츠</a></li>
+                    <li><a href="women_shoes.html">브랜드</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">
+                KIDS</a>
+                <ul class="sub_hide">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="women_shoes.html">신발</a></li>
+                    <li><a href="women_all_clothes.html">의류</a></li>
+                    <li><a href="women_best.html">스포츠</a></li>
+                    <li><a href="women_shoes.html">브랜드</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">
+                SPORTS</a>
+                <ul class="sub_hide">
+                    <li><a href="#">축구</a></li>
+                    <li><a href="women_shoes.html">러닝</a></li>
+                    <li><a href="women_all_clothes.html">농구</a></li>
+                    <li><a href="women_best.html">트레이닝</a></li>
+                    <li><a href="women_shoes.html">기타 스포츠</a></li>
+                </ul>
+                </li>
+
+            <li><a href="#">
+                BRANDS</a>
+                <ul class="sub_hide">
+                    <li><a href="#">Air Force</a></li>
+                    <li><a href="women_shoes.html">Jordan</a></li>
+                    <li><a href="women_all_clothes.html">ACG</a></li>
+                    <li><a href="women_best.html">NBA</a></li>
+                    <li><a href="women_shoes.html">Lebron</a></li>
+                </ul>
+            </li>
+
+            <li><a href="signup.html">
+                CUSTOMIZE</a></li>
+        </ul>
+        
+    </div>
+    <div class="panel-overlay"></div>   
+    <div id="contents" class="content">
+        <div class="sign-up-top"></div>
+
+        <div class="form_wrap">
+                
+            <form name="form" id="sign-up-form" action="#" method="post">
+                <div class="form_top">
+                        <p>회원가입 정보 입력</p>
+                    </div>
+                <div class="info_wrap">
+                <label for="user_name"><span class="asterisk">*</span>이름</label>
+                <input type="text" placeholder="이름을 입력하세요." id="user_name" required>
+                </div>
+                <div class="info_wrap">
+                <label for="id"><span class="asterisk">*</span>아이디</label>
+                <input type="text" placeholder="아이디를 입력하세요.(특수문자 입력 불가)" id="id" required>
+                <input type="button" class="id_check" value="중복확인" onclick="id_check()">
+                </div>
+                <div class="info_wrap">
+                <label for="psw"><span class="asterisk">*</span>비밀번호</label>
+                <input type="password" placeholder="영문/숫자/특수문자 조합 8~16자" id="psw" required>
+                </div>
+                <div class="info_wrap">
+                <label for="psw_chk"><span class="asterisk">*</span>비밀번호 확인</label>
+                <input type="password" placeholder="비밀번호 확인" id="psw_chk" required>
+                </div>
+                <div class="info_wrap">
+                <label for="phone"><span class="asterisk">*</span>휴대폰</label>
+                    <input type="text" class="phone_num1" id="phone">  -
+                    <input type="text" class="phone_num2"> -
+                    <input type="text" class="phone_num3">
+                    </div>
+                    <div class="info_wrap"> 
+                <label for="email_id1">이메일</label>
+                <input type="text" placeholder="이메일 아이디" id="email_id1" required> @
+                <input type="text" id="email_id2">
+                <select id="email_select" onChange="email_address_select();">
+                    <option value="">선택하세요</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="hotmail.com">hotmail.com</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="yahoo.co.kr">yahoo.co.kr</option>
+                    <option value="empas.com">empas.com</option>
+                    <option value="dreamwiz.com">dreamwiz.com</option>
+                    <option value="freechal.com">freechal.com</option>
+                    <option value="lycos.co.kr">lycos.co.kr</option>
+                    <option value="korea.com">korea.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="hanmir.com">hanmir.com</option>
+                    <option value="paran.com">paran.com</option>
+                    <option value="1">직접입력</option>
+                </select>
+                </div>  
+                <div class="info_wrap">
+                <label for="birth_year">생년월일</label>
+                <div class="birth_wrap">
+                <select id="birth_year" >
+                        <option value="" selected>년</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                </select>
+                <select id="birth_month" >
+                    <option value="" selected>월</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select id="birth_date" >
+                        <option value="" selected>일</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -722,141 +625,122 @@
                         <option value="10">10</option>
                         <option value="11">11</option>
                         <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>     
                     </select>
-                    <select id="birth_date" >
-                            <option value="" selected>일</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>     
-                        </select>
-                    </div>
-                    </div>
-                    <div class="final_check">
-                    
-                        <input type="checkbox" id="agree1">	
-                        <label for="agree1" class="height_30"><span>(선택) 쇼핑정보 E-mail 수신 동의</span> </label>  
-                        <br>
-                        <input type="checkbox" id="agree2"> 
-                        <label for="agree2" class="height_30"><span>(선택) 쇼핑정보 SMS 수신 동의</span> </label>
-                        <br>
-                        <input type="checkbox" id="agree3"> 
-                        <label for="agree3" class="height_30"><span>본인은 만 14세 이상이며, 약관 및 개인정보 수집·이용 동의 내용을 확인하고, 동의합니다.</span> </label>
-                    </div>
+                </div>
+                </div>
+                <div class="final_check">
+                
+                    <input type="checkbox" id="agree1">	
+                    <label for="agree1" class="height_30"><span>(선택) 쇼핑정보 E-mail 수신 동의</span> </label>  
+                    <br>
+                    <input type="checkbox" id="agree2"> 
+                    <label for="agree2" class="height_30"><span>(선택) 쇼핑정보 SMS 수신 동의</span> </label>
+                    <br>
+                    <input type="checkbox" id="agree3"> 
+                    <label for="agree3" class="height_30"><span>본인은 만 14세 이상이며, 약관 및 개인정보 수집·이용 동의 내용을 확인하고, 동의합니다.</span> </label>
+                </div>
 
-                    <div class="final_btn">
-                    <input type="button" class="cancel" value="이전으로">
-                    <input type="submit" class="sign-up" value="회원가입">
-                    </div>
+                <div class="final_btn">
+                <input type="button" class="cancel" value="이전으로">
+                <input type="submit" class="sign-up" value="회원가입">
+                </div>
 
-                </form>
-            </div>
+            </form>
         </div>
-        <footer>
-            <div class="news_letter">
-                <span>최신 소식 받아보기</span>
-                <input type="email" placeholder="Enter Email Address"><input type="button" class="emailsubmit" value="확인">
-            </div>
-            
-            <div class="footer_ulbox">
-            <ul class="footer_ul">
-                    <li>ABOUT US
-                        <ul>
-                        <li>브랜드스토리</li>
-                        <li>VISION</li>
-                        <li>TEAM</li>
-                        <li>MEDIA</li>
-                        </ul>
-                    </li>
-                    <li>SPECIAL
-                        <ul>
-                        <li>기획전/이벤트</li>
-                        <li>매장개설</li>
-                        </ul>
-                    </li>
-                    <li>SUPPORT
-                        <ul>
-                        <li>고객지원실</li>
-                        <li>FAQ</li>
-                        <li>Q/A</li>
-                        <li>A/S안내</li>
-                        <li>공지사항</li>
-                        </ul>
-                    </li>
-                    <li>FAMILY
-                        <ul>
-                        <li>화이트라벨</li>
-                        <li>TNF100KOREA</li>
-                        <li>NEVER STOP DREAMING</li>
-                        </ul>
-                    </li>
-                    <li>매장고객 및 AS문의
-                        <br>
-                        1234-5678
-                        <ul>
-                        <li>평일(월~금) 09:00 ~ 18:00</li>
-                        </ul>
-
-                        <ul class="client">
-                        <li class="onlinemall"><p>온라인몰 고객지원실
-                            <br>
-                            1577-1234</p>
-                        </li>
-                    
-                        <li>평일(월~금) 09:00 ~ 20:00
-                            <br>
-                            토요일 09:00 ~ 13:00
-                            <br>
-                            일.공휴일 휴무</li>
-                    
-                        
-                        </ul>
-                    </li>
-            </ul> 
-            <div class="address">
-                <p>개인정보 처리방침 / 이용약관 / ㈜홍길동랜드월드패션사업부 / 경기도 안양시 동안구 신촌동 
-                    <br>
-                    고객상담실 (Online) 02-333-8888, (Kids Online) 02-222-7777, (AS) 080-333-8212 
-                    <br>
-                    대표 이메일 : webmaster@korea.com
-                    <br>
-                    대표이사 : 홍길동 사업자등록번호 : 123-45-67890 통신판매업신고 : 금천구청 제 2025-01234 
-                    <br>
-                    개인정보보호책임자 : 홍길동</p>
-            </div>
-            </div>
-           
-        </footer>
-
-    <script>
+    </div>
+    <footer>
+        <div class="news_letter">
+            <span>최신 소식 받아보기</span>
+            <input type="email" placeholder="Enter Email Address"><input type="button" class="emailsubmit" value="확인">
+        </div>
         
-    </script>
+        <div class="footer_ulbox">
+        <ul class="footer_ul">
+                <li>ABOUT US
+                    <ul>
+                    <li>브랜드스토리</li>
+                    <li>VISION</li>
+                    <li>TEAM</li>
+                    <li>MEDIA</li>
+                    </ul>
+                </li>
+                <li>SPECIAL
+                    <ul>
+                    <li>기획전/이벤트</li>
+                    <li>매장개설</li>
+                    </ul>
+                </li>
+                <li>SUPPORT
+                    <ul>
+                    <li>고객지원실</li>
+                    <li>FAQ</li>
+                    <li>Q/A</li>
+                    <li>A/S안내</li>
+                    <li>공지사항</li>
+                    </ul>
+                </li>
+                <li>FAMILY
+                    <ul>
+                    <li>화이트라벨</li>
+                    <li>TNF100KOREA</li>
+                    <li>NEVER STOP DREAMING</li>
+                    </ul>
+                </li>
+                <li>매장고객 및 AS문의
+                    <br>
+                    1234-5678
+                    <ul>
+                    <li>평일(월~금) 09:00 ~ 18:00</li>
+                    </ul>
+
+                    <ul class="client">
+                    <li class="onlinemall"><p>온라인몰 고객지원실
+                        <br>
+                        1577-1234</p>
+                    </li>
+                
+                    <li>평일(월~금) 09:00 ~ 20:00
+                        <br>
+                        토요일 09:00 ~ 13:00
+                        <br>
+                        일.공휴일 휴무</li>
+                
+                    
+                    </ul>
+                </li>
+        </ul> 
+        <div class="address">
+            <p>개인정보 처리방침 / 이용약관 / ㈜홍길동랜드월드패션사업부 / 경기도 안양시 동안구 신촌동 
+                <br>
+                고객상담실 (Online) 02-333-8888, (Kids Online) 02-222-7777, (AS) 080-333-8212 
+                <br>
+                대표 이메일 : webmaster@korea.com
+                <br>
+                대표이사 : 홍길동 사업자등록번호 : 123-45-67890 통신판매업신고 : 금천구청 제 2025-01234 
+                <br>
+                개인정보보호책임자 : 홍길동</p>
+        </div>
+        </div>
+        
+    </footer>
 </body>
 </html>

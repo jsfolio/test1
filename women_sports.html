@@ -30,36 +30,45 @@
     <script src="js/goods_script.js"></script>
     <script src="js/mobile_menu.js"></script>
     <title>NIKE │ Women's Sports</title>
-
-
+    <style>
+        @media (max-width:480px){
+            .content_top_img{margin-top:80px;}
+        }
+    </style>
 </head>
 <body>
+    <div id="skip">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#menu">메뉴 바로가기</a>
+    </div>
     <div class="loginmodal">
-            <div id="login_modal-content">
-                <form name="form" id="login-form" action="#" method="post">
-                    <div class="login_form_top">
-                        <div class="login_logo" ></div>
-                            <p>로그인</p>
-                        </div>
-                    <div class="login_info_wrap">
-                    <label for="login_id">아이디</label>
-                    <input type="text" placeholder="아이디" id="login_id" required>
+        <h2 class="screen_out">나이키 로그인 모달창</h2>
+        <div id="login_modal-content">
+            <form name="form" id="login-form" action="#" method="post">
+                <div class="login_form_top">
+                    <div class="login_logo" ></div>
+                        <p>로그인</p>
                     </div>
+                <div class="login_info_wrap">
+                <label for="login_id">아이디</label>
+                <input type="text" placeholder="아이디" id="login_id" required>
+                </div>
 
-                    <div class="login_info_wrap">
-                    <label for="login_psw">비밀번호</label>
-                    <input type="password" placeholder="비밀번호" id="login_psw" required>
-                    </div>
-                    <input type="checkbox"><p class="remember">remember me</p>
-                    <p class="find">아이디/비밀번호 찾기</p>
-                    <div class="center_align">
-                    <button class="login_btn">로그인</button>
-                    <p class="login_signup">회원가입</p>
-                    </div>                   
-                </form>
-                <span class="modalclose">&times;</span> 
-            </div>
-            </div>
+                <div class="login_info_wrap">
+                <label for="login_psw">비밀번호</label>
+                <input type="password" placeholder="비밀번호" id="login_psw" required>
+                </div>
+                <input type="checkbox"><p class="remember">remember me</p>
+                <p class="find">아이디/비밀번호 찾기</p>
+                <div class="center_align">
+                <button class="login_btn">로그인</button>
+                <p class="login_signup">회원가입</p>
+                </div>                   
+            </form>
+            <h2 class="screen_out">모달창 닫기</h2>
+            <span class="modalclose">&times;</span> 
+        </div>
+    </div>
     <div class="wrap">
         <header>
             <div class="top">
@@ -70,8 +79,9 @@
                     <li><a href="signup.html">도움말</a></li>
                 </ul>
             </div>
-            <nav>  
-                 <a href="index.html"><div class="logo"></div></a>
+            <nav id="menu">  
+                <h2 class="screen_out">나이키 메인 메뉴</h2>
+                <a href="index.html"><div class="logo" title="나이키 코리아"></div></a>
                 <ul>
                     <li><a href="men_best.html">MEN</a>
                         <div class="twodepth">
@@ -335,11 +345,12 @@
                     <li><a href="signup.html">CUSTOMIZE</a></li>
               
                </ul>
-               
+               <h2 class="screen_out">상품 검색하기</h2>
                 <div class="search_box"> 
                     <div class="icon"></div>
                     <input type="search" placeholder="search">
                </div>
+               <h2 class="screen_out_mobile">나이키 메인 메뉴</h2>
                <div class="ham_box"> 
                 <div class="menu_box">
                     <span></span>
@@ -353,7 +364,7 @@
     <div class="mobile_menu">
         <ul>
             <li class="search_back">
-                
+                <h2 class="screen_out_mobile">상품 검색하기</h2>
                 <div class="m_search_box">   
                     <div class="icon"></div>
                     <input type="search" placeholder="search">
@@ -426,14 +437,12 @@
     </div>
     <div class="panel-overlay"></div>   
 
-    <div class="slide_box">
+    <div class="content_top_img">
         <div class="gray_bar"></div>
-        <div class="slide_img1">
-            <img src="img/women_sports_header.png" alt="">
-        </div>
+        <img src="img/women_sports_header.png" alt="">
     </div>
 
-    <div class="content">
+    <div id="contents" class="content">
         <div class="section1">
             <div class="section1-1">
                 <p>홈 › WOMEN › 의류</p>
@@ -799,9 +808,6 @@
         
     </div>
 
-   
-
-  
     <footer>
         <div class="news_letter">
             <span>최신 소식 받아보기</span>
@@ -877,10 +883,6 @@
         </div>
        
     </footer>
-
-
- 
-
 
     <div id="myModal" class="modal">
       <div class="modal-content">
@@ -973,66 +975,51 @@
         </div>  
     </div>
 
-
 <script>
-
-    
-   
     $(document).ready(function(){
-    
-    // $(".product_list > li").eq(3).children('.product').css({
-    //     display: "block"
-    // });
-     $(".product_list > li").click(function(){ 
-        $(this).children(".category_onoff").toggleClass("close");
-        $(this).children('.product').slideToggle(400)   })
+        $(".product_list > li").click(function(){ 
+            $(this).children(".category_onoff").toggleClass("close");
+            $(this).children('.product').slideToggle(400)  })
 
-        if(goodsWidth > 767){
-            var goodsWidth = $(window).width();
-                $(".product_list > li").eq(4).trigger("click"); 
-            }
-   
+            if(goodsWidth > 767){
+                var goodsWidth = $(window).width();
+                    $(".product_list > li").eq(4).trigger("click"); 
+                }
+        $('.thumb').click(function(){
+            var index  = $('.thumb').index(this);
 
-    $('.thumb').click(function(){
-        var index  = $('.thumb').index(this);
+            $('img.preview').eq(0).attr('src', $('img.preview').eq(0).attr('src').replace('_num', index));
+            $('img.preview').eq(1).attr('src', $('img.preview').eq(1).attr('src').replace('_num', index));
+            $('img.preview').eq(2).attr('src', $('img.preview').eq(2).attr('src').replace('_num', index));
+            $('img.preview').eq(3).attr('src', $('img.preview').eq(3).attr('src').replace('_num', index));
+            $('img.preview').eq(4).attr('src', $('img.preview').eq(4).attr('src').replace('_num', index));
+        });
+        $('.thumb').click(function(){
+                
+            $('.modal').show();
 
-        $('img.preview').eq(0).attr('src', $('img.preview').eq(0).attr('src').replace('_num', index));
-        $('img.preview').eq(1).attr('src', $('img.preview').eq(1).attr('src').replace('_num', index));
-        $('img.preview').eq(2).attr('src', $('img.preview').eq(2).attr('src').replace('_num', index));
-        $('img.preview').eq(3).attr('src', $('img.preview').eq(3).attr('src').replace('_num', index));
-        $('img.preview').eq(4).attr('src', $('img.preview').eq(4).attr('src').replace('_num', index));
-        //이미지 소스가 변경된채로 남음
-    });
-    $('.thumb').click(function(){
-            
-        $('.modal').show();
-
-        $('.product_big_img').show();
-            var imgsrc1 = "";
-            imgsrc1 = $('.product_small_thumb').children('.on').children('img').attr('src');
-            $('.product_big_img').css({
-            background: "url('" + imgsrc1 + "')"
+            $('.product_big_img').show();
+                var imgsrc1 = "";
+                imgsrc1 = $('.product_small_thumb').children('.on').children('img').attr('src');
+                $('.product_big_img').css({
+                background: "url('" + imgsrc1 + "')"
+            });
+        });
+        $('.modalclose, .modal').click(function(e){
+            $('.modal').css({
+                display: "none"
+            });
+        
+            $('img.preview').eq(0).attr('src',"img/women_wear_img/big_img_num-1.jpg");
+            $('img.preview').eq(1).attr('src',"img/women_wear_img/big_img_num-2.jpg");
+            $('img.preview').eq(2).attr('src',"img/women_wear_img/big_img_num-3.jpg");
+            $('img.preview').eq(3).attr('src',"img/women_wear_img/big_img_num-4.jpg");
+            $('img.preview').eq(4).attr('src',"img/women_wear_img/big_img_num-5.jpg");
+        
+            $('.heart').removeClass('active');
         });
     });
-    $('.modalclose, .modal').click(function(e){
-        // $('.modal').hide();
-        $('.modal').css({
-            display: "none"
-        });
-    
-        $('img.preview').eq(0).attr('src',"img/women_wear_img/big_img_num-1.jpg");
-        $('img.preview').eq(1).attr('src',"img/women_wear_img/big_img_num-2.jpg");
-        $('img.preview').eq(2).attr('src',"img/women_wear_img/big_img_num-3.jpg");
-        $('img.preview').eq(3).attr('src',"img/women_wear_img/big_img_num-4.jpg");
-        $('img.preview').eq(4).attr('src',"img/women_wear_img/big_img_num-5.jpg");
-    
-        $('.heart').removeClass('active');
-    });
-
-  });
- 
-
-    </script>
+</script>
 </body>
 
 </html>

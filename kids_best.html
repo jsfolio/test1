@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href= "css/menu.css">
     <link rel="stylesheet" href= "css/menu2.css">
-     <link rel="stylesheet" href="css/login_modal.css">
+    <link rel="stylesheet" href="css/login_modal.css">
     <link rel="stylesheet" href="css/best_css.css">
     <link rel="stylesheet" href="css/ham_css.css">
     <link rel="stylesheet" href="css/mini_menu.css">
@@ -30,168 +30,69 @@
     <script src="js/mobile_menu.js"></script>   
     <title>NIKE │ Best Kid's Wear</title>
     <style>
-      
-         .topimg1,
-         .hoodie_wrap{
-            width:100%;
-            position: relative;
+        .topimg1,
+        .hoodie_wrap{ position: relative; width:100%;}
+        .topimg1 img,.etc_sec_wrap > img,.hoodie_wrap img{
+            position: relative;max-width: 100%; 
+            width /***/: auto; /* IE8 */height: auto;
         }
-        .topimg1 img,
-        .etc_sec_wrap > img,
-        .hoodie_wrap img{
-            max-width: 100%; 
-            width /***/: auto; /* IE8 */
-            height: auto;
-            position: relative;
-        }
-        .topimg1 > .bestsell_btn{
-            position: absolute;
-            border:none;
-            bottom:28%;
-            right:5%;
-           
-        }
-        .clothes_wrap{
-            height:690px;
-        }
+        .topimg1 > .bestsell_btn{position: absolute;bottom:28%;right:5%;border:none;}
+        .clothes_wrap{height:690px;}
         .clothes_wrap > .imganimate_sec{
-            width:50%;
-            height:100%;
+            float: left;width:50%; height:100%;
             background:url('img/kids_best/topimg2.png') center no-repeat;
-            float: left;
             animation: img_animate 8s linear infinite 4s; 
         }
-        .clothes_wrap > .four_goods{
-            width:50%;
-            float: left;
-            padding:0 28px 0;
-            box-sizing: border-box;
-        }
-        .clothes_wrap > .four_goods > .four_goods_sec{
-            height:170px;
-            margin-bottom: 3px;
-            box-sizing: border-box;
-            position:relative;
-        }
-
-        .four_goods_sec > .goods_info_another{
-            width:50%;
-            padding-top:50px;
-            text-align: center;
-        }
-        .goods_name_another{
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .goods_cost_another{
-            font-size:16px;
-            color:#e72b1e;
-        }
-        .float_left{
-            width:50%;
-            text-align: center;
-        }
-        .float_right{
-            width:50%;
-            position: absolute;
-            top:0;
-            right:-6px;
-  
-            text-align: center;
-        }
-       
-      
+        .clothes_wrap > .four_goods{float: left;width:50%;padding:0 28px 0;box-sizing: border-box;}
+        .clothes_wrap > .four_goods > .four_goods_sec{position:relative;height:170px;margin-bottom: 3px;box-sizing: border-box;}
+        .four_goods_sec > .goods_info_another{ width:50%; padding-top:50px;text-align: center; }
+        .goods_name_another{cursor: pointer; font-weight: bold;}
+        .goods_cost_another{ font-size:16px; color:#e72b1e;}
+        .float_left{ width:50%; text-align: center;}
+        .float_right{position: absolute; top:0; right:-6px;width:50%;text-align: center;}
         .etc_box_b{
             height:100%;
             background:url('img/kids_best/b_sports.png') no-repeat;    
-            transition: all .3s;
-            cursor: pointer;
+            transition: all .3s; cursor: pointer;  
         }
-        
         .etcbox_wrap{position: relative;}
         .etc_box_b > .text_box_kid{
-            position: absolute;
-            height:200px;
-            top:20%;
-            left:20%;
-            overflow: hidden;
-            transition: all .3s;
-            line-height: 25px;
-            letter-spacing: -1px;
+            position: absolute;   top:20%;left:20%;
+            height:200px;overflow: hidden;
+            letter-spacing: -1px; line-height: 25px; transition: all .3s;
         }
         .etc_box_g > .text_box_kid{
-            position: absolute;
-            height:200px;
-            top:20%;
-            right:20%;
-            overflow: hidden;
-            transition: all .3s;
-            line-height: 25px;
-            letter-spacing: -1px;
+            position: absolute;top:20%; right:20%;
+            height:200px; overflow: hidden;
+            line-height: 25px;letter-spacing: -1px;transition: all .3s;
         }
-        .sports_checklist > p {
-            font-size:20px;
-            font-weight: bold;
-            margin-bottom:15px;
-        }
+        .sports_checklist > p {margin-bottom:15px;font-size:20px;font-weight: bold;}
         .list{
-            position: absolute;
-            left:-100px;
-            transition: all .3s;
-            transition-delay: .2s;
+            position: absolute; left:-100px;
+            transition: all .3s; transition-delay: .2s;
         }
         .list_g{
-            position: absolute;
-            right:-100px;
-            transition: all .3s;
-            transition-delay: .2s;
+            position: absolute;right:-100px;
+            transition: all .3s;  transition-delay: .2s;
         }
-        .etc_box_b:hover .text_box_kid{
-            transform:translateY(-50px);
-        }
-        .etc_box_b:hover .list{
-            transform:translateX(100px);
-        }
-        .etc_box_g:hover .text_box_kid{
-            transform:translateY(-50px);
-        }
-        .etc_box_g:hover .list_g{
-            transform:translateX(-100px);
-        }
-        .list > ul{
-            list-style: none;
-            text-align: left;
-            color:#393939;
-        }
-        .list>ul>li>p:hover{
-            color:#e72b1e;
-        }
-        .list_g > ul{
-            list-style: none;
-            text-align: right;
-            color:#393939;
-        }
-        .list_g>ul>li>p:hover{
-            color:#e72b1e;
-        }
-        .etc_sec{
-            max-width: 50%; 
-            overflow: hidden;
-        }
+        .etc_box_b:hover .text_box_kid{transform:translateY(-50px);}
+        .etc_box_b:hover .list{transform:translateX(100px);}
+        .etc_box_g:hover .text_box_kid{transform:translateY(-50px);}
+        .etc_box_g:hover .list_g{transform:translateX(-100px);}
+        .list > ul{text-align: left;color:#393939;}
+        .list>ul>li>p:hover{color:#e72b1e;}
+        .list_g > ul{text-align: right;color:#393939;}
+        .list_g>ul>li>p:hover{color:#e72b1e;}
+        .etc_sec{max-width: 50%; overflow: hidden;}
         .etc_box_g{
             height:100%;
             background:url('img/kids_best/g_sports.png') no-repeat;
-            transition: all .3s;
-            cursor: pointer;
+            transition: all .3s;cursor: pointer;    
         }
    
         .hoodie_wrap > .bestsell_btn{
-            position: absolute;
-            background:#000;
-            color:#fff;
-            bottom:26%;
-            left:8%;
-            border:none;
+            position: absolute; left:8%; bottom:26%;
+            color:#fff;background:#000;border:none;
         }
        
         @keyframes img_animate{
@@ -201,742 +102,693 @@
             100%{background:url('img/kids_best/topimg2.png') no-repeat;}
         }
         @media (min-width:481px) and (max-width:767px){
-            .clothes_wrap{
-                height: auto;
-            }
-            .clothes_wrap > .imganimate_sec{
-                width:100%;
-                height:200px;
-                
-            }
-            .clothes_wrap > .four_goods{
-                width:100%;
-                clear: both;
-            }
+            .clothes_wrap{height: auto;}
+            .clothes_wrap > .imganimate_sec{width:100%;height:200px;}
+            .clothes_wrap > .four_goods{width:100%;clear: both;}
           }
-  
 
         @media (max-width:480px){
-           
-            .clothes_wrap{
-                height: auto;
-            }
-            .clothes_wrap > .imganimate_sec{
-                width:100%;
-                height:200px;
-                
-            }
-            .clothes_wrap > .four_goods{
-                width:100%;
-                clear: both;
-            }
-            .etc_sec{
-                max-width:50%;
-                height:auto;
-            }
-        
-            .etcbox_wrap{
-                width:230px;
-                height:230px;
-            }
-            .etc_box_b{
-                background-position: center;
-            }
-            .etc_box_g{
-                background-position:40%;
-            }
-            .list{
-                left:0;
-            }
-            .list_g{
-                right:0;
-            }
+            .clothes_wrap{ height: auto;}
+            .clothes_wrap > .imganimate_sec{width:100%; height:200px;}
+            .clothes_wrap > .four_goods{width:100%; clear: both;}
+            .etc_sec{max-width:50%; height:auto;}
+            .etcbox_wrap{width:230px;height:230px;}
+            .etc_box_b{background-position: center;}
+            .etc_box_g{ background-position:40%;}
+            .list{left:0;}
+            .list_g{right:0;}
         }
     </style>
 </head>
 <body>
-        <div id="myModal" class="loginmodal">
-                <div id="login_modal-content">
-                    <form name="form" id="login-form" action="#" method="post">
-                        <div class="login_form_top">
-                            <div class="login_logo" ></div>
-                                <p>로그인</p>
-                            </div>
-                        <div class="login_info_wrap">
-                        <label for="login_id">아이디</label>
-                        <input type="text" placeholder="아이디" id="login_id" required>
-                        </div>
-    
-                        <div class="login_info_wrap">
-                        <label for="login_psw">비밀번호</label>
-                        <input type="password" placeholder="비밀번호" id="login_psw" required>
-                        </div>
-                        <input type="checkbox"><p class="remember">remember me</p>
-                        <p class="find">아이디/비밀번호 찾기</p>
-                        <div class="center_align">
-                        <button class="login_btn">로그인</button>
-                        <p class="login_signup">회원가입</p>
-                        </div>                   
-                    </form>
-                    <span class="modalclose">&times;</span> 
-                </div>
-                </div>
-        <div class="wrap">
-            <header>
-                <div class="top">
-                    <ul>
-                        <li><a href="#login_modal-content" class="login">주문조회</a></li>
-                        <li><a href="signup.html">회원가입</a></li>
-                        <li><a href="#login_modal-content" class="login">로그인</a></li>
-                        <li><a href="signup.html">도움말</a></li>
-                    </ul>
-                </div>
-                <nav>  
-                     <a href="index.html"><div class="logo"></div></a>
-                    <ul>
-                        <li><a href="men_best.html">MEN</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li border_none"><a href="men_shoes.html">신발</a>
-                                    <ul>
-                                        <li><a href="men_shoes.html">신발 전체</a></li>
-                                        <li><a href="men_all_clothes.html">라이프스타일</a></li>
-                                        <li><a href="men_best.html">러닝</a></li>
-                                        <li><a href="men_shoes.html">트레이닝 & 짐</a></li>
-                                        <li><a href="men_all_clothes.html">농구</a></li>
-                                        <li><a href="men_best.html">조던</a></li>
-                                        <li><a href="men_all_clothes.html">축구</a></li>
-                                        <li><a href="men_shoes.html">스케이트보딩</a></li>
-                                        <li><a href="men_all_clothes.html">골프</a></li>
-                                        <li><a href="men_shoes.html">테니스</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_all_clothes.html">의류</a>
-                                    <ul>
-                                        <li><a href="men_all_clothes.html">의류 전체</a></li>
-                                        <li><a href="men_shoes.html">후디 & 크루</a></li>
-                                        <li><a href="men_best.html">아우터웨어</a></li>
-                                        <li><a href="men_shoes.html">팬츠 & 타이츠</a></li>
-                                        <li><a href="men_all_clothes.html">탑 & 티셔츠</a></li>
-                                        <li><a href="men_best.html">숏 팬츠</a></li>
-                                        <li><a href="men_all_clothes.html">나이키 프로</a></li>
-                                        <li><a href="men_shoes.html">가방</a></li>
-                                        <li><a href="men_all_clothes.html">양말</a></li>
-                                        <li><a href="men_shoes.html">모자 & 용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_sports.html">스포츠</a>
-                                    <ul>
-                                        <li><a href="men_all_clothes.html">러닝</a></li>
-                                        <li><a href="men_best.html">트레이닝 & 짐</a></li>
-                                        <li><a href="men_all_clothes.html">농구</a></li>
-                                        <li><a href="men_shoes.html">축구</a></li>
-                                        <li><a href="men_best.html">스케이트보딩</a></li>
-                                        <li><a href="men_shoes.html">골프</a></li>
-                                        <li><a href="men_all_clothes.html">테니스</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_best.html">브랜드</a>
-                                    <ul>
-                                        <li><a href="men_best.html">Nike Sportswear</a></li>
-                                        <li><a href="women_best.html">NikeLab</a></li>
-                                        <li><a href="men_best.html">Jordan</a></li>
-                                        <li><a href="women_best.html">NBA</a></li>
-                                        <li><a href="men_best.html">FAN GEAR</a></li>
-                                        <li><a href="women_best.html">ACG</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li menu_img"><a href="men_shoes.html">
-                                    <img src="img/men_img.png" alt=""></a>
-                                   <p>조던 WHY NOT ZERO.1 LOW</p>
-                                   <P>'SMOKE GREY/BLACK'</p>
-                                </li>
-                            </ul>
-                            </div>
-                        </li>
-                        <li><a href="women_best.html">WOMEN</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li "><a href="women_shoes.html">신발</a>
-                                    <ul>
-                                        <li><a href="women_shoes.html">신발 전체</a></li>
-                                        <li><a href="women_all_clothes.html">라이프스타일</a></li>
-                                        <li><a href="women_best.html">러닝</a></li>
-                                        <li><a href="women_all_clothes.html">트레이닝 & 짐</a></li>
-                                        <li><a href="women_shoes.html">골프</a></li>
-                                        <li><a href="women_best.html">테니스</a></li>
-    
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="women_all_clothes.html">의류</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">의류 전체</a></li>
-                                        <li><a href="women_shoes.html">팬츠 & 타이츠</a></li>
-                                        <li><a href="women_best.html">후디 & 크루</a></li>
-                                        <li><a href="women_best.html">아우터웨어</a></li>
-                                        <li><a href="women_all_clothes.html">탑 & 티셔츠</a></li>
-                                        <li><a href="women_shoes.html">스포츠 브라</a></li>
-                                        <li><a href="women_best.html">숏 팬츠</a></li>
-                                        <li><a href="women_shoes.html">스커트 & 드레스</a></li>
-                                        <li><a href="women_all_clothes.html">가방</a></li>
-                                        <li><a href="women_best.html">양말</a></li>
-                                        <li><a href="women_all_clothes.html">모자 & 용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="women_sports.html">스포츠</a>
-                                    <ul>
-                                        <li><a href="women_shoes.html">러닝</a></li>
-                                        <li><a href="women_best.html">트레이닝 & 짐</a></li>
-                                        <li><a href="women_shoes.html">골프</a></li>
-                                        <li><a href="women_all_clothes.html">테니스</a></li>
-                                        <li><a href="women_best.html">요가</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="women_best.html">브랜드</a>
-                                    <ul>
-                                        <li><a href="men_best.html">Nike Sportswear</a></li>
-                                        <li><a href="women_best.html">NikeLab</a></li>
-                                        <li><a href="men_best.html">ACG</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li menu_img"><a href="women_best.html">
-                                    <img src="img/women_img.png" alt=""></a>
-                                    <p>높아진 중창과 낮아진 발목라인</p>
-                                    <p>에어 포스1 세이지 로우</p>
-                               
-                                </li>
-                            </ul>
-                            </div>
-                        </li>
-                        <li><a href="kids_best.html">KIDS</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li"><a href="kids_best.html">사이즈별</a>
-                                    <ul>
-                                        <li class="kids_size" ><a href="kids_best.html"><span class="bold">신발</span></a>
-                                            <ul>
-                                                <li class="kids"><a href="women_all_clothes.html">베이비(160mm 이하)</a></li>
-                                                <li class="kids"><a href="kids_best.html">리틀키즈(165-220mm)</a></li>
-                                                <li class="kids"><a href="women_shoes.html">주니어(225-250mm)</a></li>
-                                            </ul>
-                                        </li>
-                                        
-                                        <li class="kids_size"><a href="kids_best.html"><span class="bold">의류</span></a>
-                                            <ul>
-                                                <li class="kids"><a href="women_all_clothes.html">베이비(0-4세)</a></li>
-                                                <li class="kids"><a href="kids_best.html">리틀키즈(4-7세)</a></li>
-                                                <li class="kids"><a href="women_shoes.html">주니어(8-13세)</a></li>
-                                            </ul>
-                                        </li>
-    
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="kids_best.html">스포츠</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">러닝</a></li>
-                                        <li><a href="kids_best.html">축구</a></li>
-                                        <li><a href="women_shoes.html">농구</a></li>
-                                        <li><a href="kids_best.html">트레이닝 & 짐</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="kids_best.html">신발</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">신발 전체</a></li>
-                                        <li><a href="kids_best.html">라이프스타일</a></li>
-                                        <li><a href="women_shoes.html">러닝</a></li>
-                                        <li><a href="kids_best.html">축구</a></li>
-                                        <li><a href="women_all_clothes.html">농구</a></li>
-                                        <li><a href="kids_best.html">샌들 & 슬리퍼</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="kids_best.html">의류</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">의류 전체</a></li>
-                                        <li><a href="kids_best.html">후디 & 크루</a></li>
-                                        <li><a href="women_shoes.html">팬츠 & 타이츠</a></li>
-                                        <li><a href="kids_best.html">아우터웨어</a></li>
-                                        <li><a href="women_all_clothes.html">탑 & 티셔츠</a></li>
-                                        <li><a href="kids_best.html">세트</a></li>
-                                        <li><a href="women_shoes.html">숏 팬츠</a></li>
-                                        <li><a href="kids_best.html">베이스 레이어</a></li>
-                                        <li><a href="women_all_clothes.html">양말</a></li>
-                                        <li><a href="kids_best.html">가방 & 모자 & 용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li menu_img"><a href="kids_best.html">
-                                    <img src="img/kid_img.png" alt=""></a>
-                                    <p>NBA 리틀 팬들을 위한</p>
-                                    <P>에어 포스 1 NBA</P>
-                               
-                                </li>
-                            </ul>
-                                </div>
-                        </li>
-                        <li><a href="women_best.html">SPORTS</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li"><a href="women_best.html">축구</a>
-                                    <ul>
-                                        <li><a href="women_sports.html">
-                                            <img src="img/football_img.png" alt="">
-                                        </a></li>
-                                        <li><a href="men_sports.html">신발</a></li>
-                                        <li><a href="women_sports.html">의류</a></li>
-                                        <li><a href="women_all_clothes.html">용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_sports.html">러닝</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">
-                                            <img src="img/run_img.png" alt="">
-                                        </a></li>
-                                        <li><a href="men_shoes.html">신발</a></li>
-                                        <li><a href="men_all_clothes.html">의류</a></li>
-                                        <li><a href="women_sports.html">용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_sports.html">농구</a>
-                                    <ul>
-                                        <li><a href="women_best.html">
-                                            <img src="img/basket_img.png" alt="">
-                                        </a></li>
-                                        <li><a href="men_shoes.html">신발</a></li>
-                                        <li><a href="men_all_clothes.html">의류</a></li>
-                                        <li><a href="women_sports.html">용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_best.html">트레이닝</a>
-                                    <ul>
-                                        <li><a href="women_sports.html">
-                                            <img src="img/train_img.png" alt="">
-                                        </a></li>
-                                        <li><a href="men_shoes.html">신발</a></li>
-                                        <li><a href="men_all_clothes.html">의류</a></li>
-                                        <li><a href="men_sports.html">용품</a></li>
-                                    </ul>
-                                </li>
-                                <li class="sub_li"><a href="men_best.html">기타 스포츠</a>
-                                    <ul>
-                                        <li><a href="women_all_clothes.html">아웃도어</a></li>
-                                        <li><a href="women_best.html">골프</a></li>
-                                        <li><a href="women_all_clothes.html">테니스</a></li>
-                                        <li><a href="women_best.html">스케이트보딩</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            </div>
-                       </li>
-                        <li><a href="men_best.html">BRANDS</a>
-                            <div class="twodepth">
-                            <ul class="subs1200">
-                                <li class="sub_li border_none"><a href="men_best.html">
-                                    <img src="img/airforce_img.png" alt="">
-                                </a>
-                                </li>
-                                <li class="sub_li border_none"><a href="women_best.html">
-                                    <img src="img/jordan_img.png" alt="">
-                                </a>
-                                </li>
-                                <li class="sub_li border_none"><a href="men_best.html">
-                                    <img src="img/acg_img.png" alt="">
-                                </a>
-                                </li>
-                                <li class="sub_li border_none"><a href="women_best.html">
-                                    <img src="img/nba_img.png" alt="">
-                                </a>
-                                </li>
-                                <li class="sub_li border_none"><a href="men_best.html">
-                                    <img src="img/lebron_img.png" alt="">
-                                </a>
-                                </li>
-                            </ul>
-                            </div>
-                        </li>
-                        <li><a href="signup.html">CUSTOMIZE</a></li>
-                  
-                   </ul>
-                   
-                    <div class="search_box"> 
-                        <div class="icon"></div>
-                        <input type="search" placeholder="search">
-                   </div>
-                   <div class="ham_box"> 
-                    <div class="menu_box">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+    <div id="skip">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#menu">메뉴 바로가기</a>
+    </div>
+    <div id="myModal" class="loginmodal">
+        <h2 class="screen_out">나이키 로그인 모달창</h2>
+        <div id="login_modal-content">
+            <form name="form" id="login-form" action="#" method="post">
+                <div class="login_form_top">
+                    <div class="login_logo" ></div>
+                        <p>로그인</p>
                     </div>
-                
-                </nav>
-            </header>
+                <div class="login_info_wrap">
+                <label for="login_id">아이디</label>
+                <input type="text" placeholder="아이디" id="login_id" required>
+                </div>
+
+                <div class="login_info_wrap">
+                <label for="login_psw">비밀번호</label>
+                <input type="password" placeholder="비밀번호" id="login_psw" required>
+                </div>
+                <input type="checkbox"><p class="remember">remember me</p>
+                <p class="find">아이디/비밀번호 찾기</p>
+                <div class="center_align">
+                <button class="login_btn">로그인</button>
+                <p class="login_signup">회원가입</p>
+                </div>                   
+            </form>
+            <h2 class="screen_out">모달창 닫기</h2>
+            <span class="modalclose">&times;</span> 
         </div>
-        <div class="mobile_menu">
-            <ul>
-                <li class="search_back">
-                    
-                    <div class="m_search_box">   
-                        <div class="icon"></div>
-                        <input type="search" placeholder="search">
-                   </div></li>
-                <li><a href="#">
-                   Home</a>
-                </li>
+    </div>
+    <div class="wrap">
+        <header>
+            <div class="top">
+                <ul>
+                    <li><a href="#login_modal-content" class="login">주문조회</a></li>
+                    <li><a href="signup.html">회원가입</a></li>
+                    <li><a href="#login_modal-content" class="login">로그인</a></li>
+                    <li><a href="signup.html">도움말</a></li>
+                </ul>
+            </div>
+            <nav id="menu">  
+                <h2 class="screen_out">나이키 메인 메뉴</h2>
+                <a href="index.html"><div class="logo" title="나이키 코리아"></div></a>
+                <ul>
+                    <li><a href="men_best.html">MEN</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li border_none"><a href="men_shoes.html">신발</a>
+                                <ul>
+                                    <li><a href="men_shoes.html">신발 전체</a></li>
+                                    <li><a href="men_all_clothes.html">라이프스타일</a></li>
+                                    <li><a href="men_best.html">러닝</a></li>
+                                    <li><a href="men_shoes.html">트레이닝 & 짐</a></li>
+                                    <li><a href="men_all_clothes.html">농구</a></li>
+                                    <li><a href="men_best.html">조던</a></li>
+                                    <li><a href="men_all_clothes.html">축구</a></li>
+                                    <li><a href="men_shoes.html">스케이트보딩</a></li>
+                                    <li><a href="men_all_clothes.html">골프</a></li>
+                                    <li><a href="men_shoes.html">테니스</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_all_clothes.html">의류</a>
+                                <ul>
+                                    <li><a href="men_all_clothes.html">의류 전체</a></li>
+                                    <li><a href="men_shoes.html">후디 & 크루</a></li>
+                                    <li><a href="men_best.html">아우터웨어</a></li>
+                                    <li><a href="men_shoes.html">팬츠 & 타이츠</a></li>
+                                    <li><a href="men_all_clothes.html">탑 & 티셔츠</a></li>
+                                    <li><a href="men_best.html">숏 팬츠</a></li>
+                                    <li><a href="men_all_clothes.html">나이키 프로</a></li>
+                                    <li><a href="men_shoes.html">가방</a></li>
+                                    <li><a href="men_all_clothes.html">양말</a></li>
+                                    <li><a href="men_shoes.html">모자 & 용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_sports.html">스포츠</a>
+                                <ul>
+                                    <li><a href="men_all_clothes.html">러닝</a></li>
+                                    <li><a href="men_best.html">트레이닝 & 짐</a></li>
+                                    <li><a href="men_all_clothes.html">농구</a></li>
+                                    <li><a href="men_shoes.html">축구</a></li>
+                                    <li><a href="men_best.html">스케이트보딩</a></li>
+                                    <li><a href="men_shoes.html">골프</a></li>
+                                    <li><a href="men_all_clothes.html">테니스</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_best.html">브랜드</a>
+                                <ul>
+                                    <li><a href="men_best.html">Nike Sportswear</a></li>
+                                    <li><a href="women_best.html">NikeLab</a></li>
+                                    <li><a href="men_best.html">Jordan</a></li>
+                                    <li><a href="women_best.html">NBA</a></li>
+                                    <li><a href="men_best.html">FAN GEAR</a></li>
+                                    <li><a href="women_best.html">ACG</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li menu_img"><a href="men_shoes.html">
+                                <img src="img/men_img.png" alt=""></a>
+                                <p>조던 WHY NOT ZERO.1 LOW</p>
+                                <P>'SMOKE GREY/BLACK'</p>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="women_best.html">WOMEN</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li "><a href="women_shoes.html">신발</a>
+                                <ul>
+                                    <li><a href="women_shoes.html">신발 전체</a></li>
+                                    <li><a href="women_all_clothes.html">라이프스타일</a></li>
+                                    <li><a href="women_best.html">러닝</a></li>
+                                    <li><a href="women_all_clothes.html">트레이닝 & 짐</a></li>
+                                    <li><a href="women_shoes.html">골프</a></li>
+                                    <li><a href="women_best.html">테니스</a></li>
 
-                <li><a href="#">
-                   MEN</a>
-                    <ul class="sub_hide">
-                        <li><a href="#">BEST</a></li>
-                        <li><a href="men_shoes.html">신발</a></li>
-                        <li><a href="men_all_clothes.html">의류</a></li>
-                        <li><a href="men_best.html">스포츠</a></li>
-                        <li><a href="men_shoes.html">브랜드</a></li>
-                        
-                    </ul>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="women_all_clothes.html">의류</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">의류 전체</a></li>
+                                    <li><a href="women_shoes.html">팬츠 & 타이츠</a></li>
+                                    <li><a href="women_best.html">후디 & 크루</a></li>
+                                    <li><a href="women_best.html">아우터웨어</a></li>
+                                    <li><a href="women_all_clothes.html">탑 & 티셔츠</a></li>
+                                    <li><a href="women_shoes.html">스포츠 브라</a></li>
+                                    <li><a href="women_best.html">숏 팬츠</a></li>
+                                    <li><a href="women_shoes.html">스커트 & 드레스</a></li>
+                                    <li><a href="women_all_clothes.html">가방</a></li>
+                                    <li><a href="women_best.html">양말</a></li>
+                                    <li><a href="women_all_clothes.html">모자 & 용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="women_sports.html">스포츠</a>
+                                <ul>
+                                    <li><a href="women_shoes.html">러닝</a></li>
+                                    <li><a href="women_best.html">트레이닝 & 짐</a></li>
+                                    <li><a href="women_shoes.html">골프</a></li>
+                                    <li><a href="women_all_clothes.html">테니스</a></li>
+                                    <li><a href="women_best.html">요가</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="women_best.html">브랜드</a>
+                                <ul>
+                                    <li><a href="men_best.html">Nike Sportswear</a></li>
+                                    <li><a href="women_best.html">NikeLab</a></li>
+                                    <li><a href="men_best.html">ACG</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li menu_img"><a href="women_best.html">
+                                <img src="img/women_img.png" alt=""></a>
+                                <p>높아진 중창과 낮아진 발목라인</p>
+                                <p>에어 포스1 세이지 로우</p>
+                            
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="kids_best.html">KIDS</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li"><a href="kids_best.html">사이즈별</a>
+                                <ul>
+                                    <li class="kids_size" ><a href="kids_best.html"><span class="bold">신발</span></a>
+                                        <ul>
+                                            <li class="kids"><a href="women_all_clothes.html">베이비(160mm 이하)</a></li>
+                                            <li class="kids"><a href="kids_best.html">리틀키즈(165-220mm)</a></li>
+                                            <li class="kids"><a href="women_shoes.html">주니어(225-250mm)</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="kids_size"><a href="kids_best.html"><span class="bold">의류</span></a>
+                                        <ul>
+                                            <li class="kids"><a href="women_all_clothes.html">베이비(0-4세)</a></li>
+                                            <li class="kids"><a href="kids_best.html">리틀키즈(4-7세)</a></li>
+                                            <li class="kids"><a href="women_shoes.html">주니어(8-13세)</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="kids_best.html">스포츠</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">러닝</a></li>
+                                    <li><a href="kids_best.html">축구</a></li>
+                                    <li><a href="women_shoes.html">농구</a></li>
+                                    <li><a href="kids_best.html">트레이닝 & 짐</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="kids_best.html">신발</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">신발 전체</a></li>
+                                    <li><a href="kids_best.html">라이프스타일</a></li>
+                                    <li><a href="women_shoes.html">러닝</a></li>
+                                    <li><a href="kids_best.html">축구</a></li>
+                                    <li><a href="women_all_clothes.html">농구</a></li>
+                                    <li><a href="kids_best.html">샌들 & 슬리퍼</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="kids_best.html">의류</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">의류 전체</a></li>
+                                    <li><a href="kids_best.html">후디 & 크루</a></li>
+                                    <li><a href="women_shoes.html">팬츠 & 타이츠</a></li>
+                                    <li><a href="kids_best.html">아우터웨어</a></li>
+                                    <li><a href="women_all_clothes.html">탑 & 티셔츠</a></li>
+                                    <li><a href="kids_best.html">세트</a></li>
+                                    <li><a href="women_shoes.html">숏 팬츠</a></li>
+                                    <li><a href="kids_best.html">베이스 레이어</a></li>
+                                    <li><a href="women_all_clothes.html">양말</a></li>
+                                    <li><a href="kids_best.html">가방 & 모자 & 용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li menu_img"><a href="kids_best.html">
+                                <img src="img/kid_img.png" alt=""></a>
+                                <p>NBA 리틀 팬들을 위한</p>
+                                <P>에어 포스 1 NBA</P>
+                            
+                            </li>
+                        </ul>
+                            </div>
+                    </li>
+                    <li><a href="women_best.html">SPORTS</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li"><a href="women_best.html">축구</a>
+                                <ul>
+                                    <li><a href="women_sports.html">
+                                        <img src="img/football_img.png" alt="">
+                                    </a></li>
+                                    <li><a href="men_sports.html">신발</a></li>
+                                    <li><a href="women_sports.html">의류</a></li>
+                                    <li><a href="women_all_clothes.html">용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_sports.html">러닝</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">
+                                        <img src="img/run_img.png" alt="">
+                                    </a></li>
+                                    <li><a href="men_shoes.html">신발</a></li>
+                                    <li><a href="men_all_clothes.html">의류</a></li>
+                                    <li><a href="women_sports.html">용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_sports.html">농구</a>
+                                <ul>
+                                    <li><a href="women_best.html">
+                                        <img src="img/basket_img.png" alt="">
+                                    </a></li>
+                                    <li><a href="men_shoes.html">신발</a></li>
+                                    <li><a href="men_all_clothes.html">의류</a></li>
+                                    <li><a href="women_sports.html">용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_best.html">트레이닝</a>
+                                <ul>
+                                    <li><a href="women_sports.html">
+                                        <img src="img/train_img.png" alt="">
+                                    </a></li>
+                                    <li><a href="men_shoes.html">신발</a></li>
+                                    <li><a href="men_all_clothes.html">의류</a></li>
+                                    <li><a href="men_sports.html">용품</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub_li"><a href="men_best.html">기타 스포츠</a>
+                                <ul>
+                                    <li><a href="women_all_clothes.html">아웃도어</a></li>
+                                    <li><a href="women_best.html">골프</a></li>
+                                    <li><a href="women_all_clothes.html">테니스</a></li>
+                                    <li><a href="women_best.html">스케이트보딩</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="men_best.html">BRANDS</a>
+                        <div class="twodepth">
+                        <ul class="subs1200">
+                            <li class="sub_li border_none"><a href="men_best.html">
+                                <img src="img/airforce_img.png" alt="">
+                            </a>
+                            </li>
+                            <li class="sub_li border_none"><a href="women_best.html">
+                                <img src="img/jordan_img.png" alt="">
+                            </a>
+                            </li>
+                            <li class="sub_li border_none"><a href="men_best.html">
+                                <img src="img/acg_img.png" alt="">
+                            </a>
+                            </li>
+                            <li class="sub_li border_none"><a href="women_best.html">
+                                <img src="img/nba_img.png" alt="">
+                            </a>
+                            </li>
+                            <li class="sub_li border_none"><a href="men_best.html">
+                                <img src="img/lebron_img.png" alt="">
+                            </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="signup.html">CUSTOMIZE</a></li>
                 
-                </li>
-
-                <li><a href="#">
-                   WOMEN</a>
-                   <ul class="sub_hide">
-                        <li><a href="#">BEST</a></li>
-                        <li><a href="women_shoes.html">신발</a></li>
-                        <li><a href="women_all_clothes.html">의류</a></li>
-                        <li><a href="women_best.html">스포츠</a></li>
-                        <li><a href="women_shoes.html">브랜드</a></li>
-                   </ul>
-                </li>
-
-                <li><a href="#">
-                   KIDS</a>
-                   <ul class="sub_hide">
-                        <li><a href="#">BEST</a></li>
-                        <li><a href="women_shoes.html">신발</a></li>
-                        <li><a href="women_all_clothes.html">의류</a></li>
-                        <li><a href="women_best.html">스포츠</a></li>
-                        <li><a href="women_shoes.html">브랜드</a></li>
-                   </ul>
-                </li>
-
-                <li><a href="#">
-                   SPORTS</a>
-                   <ul class="sub_hide">
-                        <li><a href="#">축구</a></li>
-                        <li><a href="women_shoes.html">러닝</a></li>
-                        <li><a href="women_all_clothes.html">농구</a></li>
-                        <li><a href="women_best.html">트레이닝</a></li>
-                        <li><a href="women_shoes.html">기타 스포츠</a></li>
-                   </ul>
-                 </li>
-
-                <li><a href="#">
-                   BRANDS</a>
-                   <ul class="sub_hide">
-                        <li><a href="#">Air Force</a></li>
-                        <li><a href="women_shoes.html">Jordan</a></li>
-                        <li><a href="women_all_clothes.html">ACG</a></li>
-                        <li><a href="women_best.html">NBA</a></li>
-                        <li><a href="women_shoes.html">Lebron</a></li>
-                   </ul>
-                </li>
-
-                <li><a href="signup.html">
-                   CUSTOMIZE</a></li>
-            </ul>
+                </ul>
+                <h2 class="screen_out">상품 검색하기</h2>
+                <div class="search_box"> 
+                    <div class="icon"></div>
+                    <input type="search" placeholder="search">
+                </div>
+                <h2 class="screen_out_mobile">나이키 메인 메뉴</h2>
+                <div class="ham_box"> 
+                <div class="menu_box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             
-        </div>
-        <div class="panel-overlay"></div>   
-        <div class="content">
-         
-            <div class="shoes">
-                <div class="topimg1">
-                    <img src="img/kids_best/topimg1.png" alt="">
-                <button class="bestsell_btn"><span>자세히 보기</span></button>
-                </div>
-                <div class="shoes_best_sec">
-                
-                    <div class="goods_wrap">
-                        <p>이 달의 추천상품</p>
-                         <span>제품더보기 〉</span>
+            </nav>
+        </header>
+    </div>
+    <div class="mobile_menu">
+        <ul>
+            <li class="search_back">
+                <h2 class="screen_out_mobile">상품 검색하기</h2>
+                <div class="m_search_box">   
+                    <div class="icon"></div>
+                    <input type="search" placeholder="search">
+                </div></li>
+            <li><a href="#">Home</a>
+            </li>
+            <li><a href="#">
+                MEN</a>
+                <ul class="sub_hide">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="men_shoes.html">신발</a></li>
+                    <li><a href="men_all_clothes.html">의류</a></li>
+                    <li><a href="men_best.html">스포츠</a></li>
+                    <li><a href="men_shoes.html">브랜드</a></li>
+                    
+                </ul>
+            
+            </li>
 
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/shoes01.jpg" class="caption_rel" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 에어 포스 1 LV8 스포츠 (GS)</p>
-                                <p class="goods_cost">주니어 신발 (225-250mm)</p>
-                                <p class="goods_cost">119,000 원</p>
-                            </div>
-                            
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/shoes02.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 에어맥스 타이니 90</p>
-                                <p class="goods_cost">리틀키즈 신발 (165-220mm)</p>
-                                <p class="goods_cost">75,000 원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/shoes03.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 와플 1 프리미엄</p>
-                                <p class="goods_cost">베이비 신발 (70-100mm)</p>
-                                <p class="goods_cost">55,000  원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec right_zero">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/shoes04.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 줌 KD11</p>
-                                <p class="goods_cost">주니어 신발 (225-250mm)</p>
-                                <p class="goods_cost">149,000원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/shoes05.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 에어맥스 타이니 90</p>
-                                <p class="goods_cost">리틀키즈 신발 (165-220mm)</p>
-                                <p class="goods_cost">60,000 원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/shoes06.jpg" alt="">
-                             <div class="goods_info">
-                                <p class="goods_name">에어 포스 1 하이 유틸리티</p>
-                                <p class="goods_cost">베이비 신발 (120-160mm)</p>
-                                <p class="goods_cost">59,000  원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/shoes07.jpg" alt="">
-                             <div class="goods_info">
-                                <p class="goods_name">나이키 에어 포스 1</p>
-                                <p class="goods_cost">베이비 신발 (120-160mm)</p>
-                                <p class="goods_cost">59,000  원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec right_zero">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/shoes08.jpg" alt="">
-                             <div class="goods_info">
-                                <p class="goods_name">나이키 에어 포스 1 LV8</p>
-                                <p class="goods_cost">주니어 신발 (225-250mm)</p>
-                                <p class="goods_cost">119,000  원</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <li><a href="#">
+                WOMEN</a>
+                <ul class="sub_hide">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="women_shoes.html">신발</a></li>
+                    <li><a href="women_all_clothes.html">의류</a></li>
+                    <li><a href="women_best.html">스포츠</a></li>
+                    <li><a href="women_shoes.html">브랜드</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">
+                KIDS</a>
+                <ul class="sub_hide">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="women_shoes.html">신발</a></li>
+                    <li><a href="women_all_clothes.html">의류</a></li>
+                    <li><a href="women_best.html">스포츠</a></li>
+                    <li><a href="women_shoes.html">브랜드</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">
+                SPORTS</a>
+                <ul class="sub_hide">
+                    <li><a href="#">축구</a></li>
+                    <li><a href="women_shoes.html">러닝</a></li>
+                    <li><a href="women_all_clothes.html">농구</a></li>
+                    <li><a href="women_best.html">트레이닝</a></li>
+                    <li><a href="women_shoes.html">기타 스포츠</a></li>
+                </ul>
+                </li>
+
+            <li><a href="#">
+                BRANDS</a>
+                <ul class="sub_hide">
+                    <li><a href="#">Air Force</a></li>
+                    <li><a href="women_shoes.html">Jordan</a></li>
+                    <li><a href="women_all_clothes.html">ACG</a></li>
+                    <li><a href="women_best.html">NBA</a></li>
+                    <li><a href="women_shoes.html">Lebron</a></li>
+                </ul>
+            </li>
+
+            <li><a href="signup.html">
+                CUSTOMIZE</a></li>
+        </ul>
+        
+    </div>
+    <div class="panel-overlay"></div>   
+    <div id="contents" class="content">        
+        <div class="shoes">
+            <div class="topimg1">
+                <img src="img/kids_best/topimg1.png" alt="">
+            <button class="bestsell_btn"><span>자세히 보기</span></button>
             </div>
-            <div class="clothes">
-                <div class="clothes_wrap">
-                    <div class="imganimate_sec"></div>
-                    <div class="four_goods">
-                        <div class="four_goods_sec">
-                            <div class="goods_info_another float_left">
-                                <p class="goods_name_another">조던 "Why Not?" ZER0.1</p>
-                                <p class="goods_cost_another">76,300 원</p>                                 
-                            </div>
-                                <div class="float_right">
-                                    <img src="img/kids_best/goods1.png" alt="">
-                                </div>  
-                        </div>
-                         <div class="four_goods_sec">
-                             <div class="float_left">
-                                    <img src="img/kids_best/goods2.png" alt="">
-                             </div> 
-                            <div class="goods_info_another float_right">   
-                                <p class="goods_name_another">조던 점프맨 플리스 크루 탑 주니어 긴팔 티셔츠</p>
-                                <p class="goods_cost_another">65,000 원</p>                                
-                            </div>
-                        </div>
-                        <div class="four_goods_sec">
-                            <div class="goods_info_another float_left">
-                                <p class="goods_name_another">나이키 스포츠웨어 클럽 플리스 크루 리틀키즈 긴팔 티셔츠</p>
-                                <p class="goods_cost_another">45,000 원</p>                                
-                            </div>
-                                <div class="float_right">
-                                    <img src="img/kids_best/goods3.png" alt="">
-                                </div>  
-                        </div>
-                        <div class="four_goods_sec">
-                            <div class="float_left">
-                                <img src="img/kids_best/goods4.png" alt="">
-                            </div>  
-                            <div class="goods_info_another float_right">
-                                <p class="goods_name_another">나이키 다이나모 프리 리틀키즈 신발</p>
-                                <p class="goods_cost_another">69,000 원</p>                                 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clothes_best_sec">
-                    <div class="goods_wrap">
-                        <p>이 달의 추천상품</p>
-                            <span>제품더보기 〉</span>
-
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/clothes01.jpg" class="caption_rel" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 다운필 패션 후디 재킷</p>
-                                <p class="goods_cost">리틀키즈 후디 재킷 (4-7세)</p>
-                                <p class="goods_cost">169,000 원</p>
-                            </div>
-                            
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/clothes02.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 스포츠웨어 테크 플리스 에센셜 풀집 후디</p>
-                                <p class="goods_cost">주니어 후드 풀 집 탑 (8-13세)</p>
-                                <p class="goods_cost">99,000 원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/clothes03.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">점프맨 플리스 후디 (1-4세)</p>
-                                <p class="goods_cost">베이비 긴팔 티셔츠 (3-36개월)</p>
-                                <p class="goods_cost">65,000 원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec right_zero">
-                                <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/clothes04.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">조던 점프맨 플리스 팬츠</p>
-                                <p class="goods_cost">주니어 팬츠 (8-13세)</p>
-                                <p class="goods_cost">55,000  원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/clothes05.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 스포츠웨어 셰르파 윈드러너 재킷</p>
-                                <p class="goods_cost">주니어 재킷 (8-13세)</p>
-                                <p class="goods_cost">89,000 원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/clothes06.jpg" alt="">
-                                <div class="goods_info">
-                                <p class="goods_name">나이키 스포츠웨어 클럽 플리스 크루</p>
-                                <p class="goods_cost">리틀키즈 후디 긴팔 티셔츠 (4-7세)</p>
-                                <p class="goods_cost">45,000 원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/clothes07.jpg" alt="">
-                                <div class="goods_info">
-                                <p class="goods_name">나이키 스포츠웨어 퓨추라 플리스 후디</p>
-                                <p class="goods_cost">리틀키즈 후디 긴팔 탑 (4-7세)</p>
-                                <p class="goods_cost">45,000 원</p>
-                            </div>
-                        </div>
-                        <div class="goods_sec right_zero">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/clothes08.jpg" alt="">
-                                <div class="goods_info">
-                                <p class="goods_name">나이키 퓨추라 카모 크루 탑 & 조거 팬츠 세트 (1-4세)</p>
-                                <p class="goods_cost">베이비 세트 (3-36개월)</p>
-                                <p class="goods_cost">69,000  원</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="etc_sec_wrap">
-                <img src="img/kids_best/topimg3.png" alt="">
-                <div class="sports_best_sec">
-                    <div class="goods_wrap">
-                        <p>이 달의 추천상품</p>
+            <div class="shoes_best_sec">
+            
+                <div class="goods_wrap">
+                    <p>이 달의 추천상품</p>
                         <span>제품더보기 〉</span>
 
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/item01.jpg" class="caption_rel" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 폼 비니</p>
-                                <p class="goods_cost">주니어 모자 (8-13세)</p>
-                                <p class="goods_cost">29,000  원</p>
-                            </div>
-                            
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/shoes01.jpg" class="caption_rel" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 에어 포스 1 LV8 스포츠 (GS)</p>
+                            <p class="goods_cost">주니어 신발 (225-250mm)</p>
+                            <p class="goods_cost">119,000 원</p>
                         </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/item02.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 페더 라이트 캡</p>
-                                <p class="goods_cost">주니어 모자 (8-13세)</p>
-                                <p class="goods_cost">25,000  원</p>
-                            </div>
+                        
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/shoes02.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 에어맥스 타이니 90</p>
+                            <p class="goods_cost">리틀키즈 신발 (165-220mm)</p>
+                            <p class="goods_cost">75,000 원</p>
                         </div>
-                        <div class="goods_sec">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/item03.jpg" alt="">
-                            <div class="goods_info">
-                                <p class="goods_name">나이키 퍼포먼스 쿠션드 크루 삭스</p>
-                                <p class="goods_cost">주니어 양말 (8-13세)</p>
-                                <p class="goods_cost">19,000  원</p>
-                            </div>
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/shoes03.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 와플 1 프리미엄</p>
+                            <p class="goods_cost">베이비 신발 (70-100mm)</p>
+                            <p class="goods_cost">55,000  원</p>
                         </div>
-                        <div class="goods_sec right_zero">
-                            <div class="black"><button class="view_more">구매하기</button></div>
-                            <img src="img/kids_best/item04.jpg" alt="">
+                    </div>
+                    <div class="goods_sec right_zero">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/shoes04.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 줌 KD11</p>
+                            <p class="goods_cost">주니어 신발 (225-250mm)</p>
+                            <p class="goods_cost">149,000원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/shoes05.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 에어맥스 타이니 90</p>
+                            <p class="goods_cost">리틀키즈 신발 (165-220mm)</p>
+                            <p class="goods_cost">60,000 원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/shoes06.jpg" alt="">
                             <div class="goods_info">
-                                <p class="goods_name">나이키 브라질리아 백팩</p>
-                                <p class="goods_cost">주니어 백팩 (8-13세)</p>
-                                <p class="goods_cost">45,000 원</p>
-                            </div>
+                            <p class="goods_name">에어 포스 1 하이 유틸리티</p>
+                            <p class="goods_cost">베이비 신발 (120-160mm)</p>
+                            <p class="goods_cost">59,000  원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/shoes07.jpg" alt="">
+                            <div class="goods_info">
+                            <p class="goods_name">나이키 에어 포스 1</p>
+                            <p class="goods_cost">베이비 신발 (120-160mm)</p>
+                            <p class="goods_cost">59,000  원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec right_zero">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/shoes08.jpg" alt="">
+                            <div class="goods_info">
+                            <p class="goods_name">나이키 에어 포스 1 LV8</p>
+                            <p class="goods_cost">주니어 신발 (225-250mm)</p>
+                            <p class="goods_cost">119,000  원</p>
                         </div>
                     </div>
                 </div>
-               
-                <div class="hoodie_wrap">
-                    <img src="img/kids_best/hoodie.png" alt="">
-                    <button class="bestsell_btn"><span>자세히 보기</span></button>
-                </div>
-              
-              
-                <div class="etc_sec">
-                      <div class="etcbox_wrap">
-                          <div class="etc_box_b">
-                                <div class="text_box_kid">
-                                    <div class="sports_checklist"><p>나이키 BOYS <br> 스포츠 체크 리스트</p></div>
-                                    <div class="list">
-                                        <ul>
-                                            <li><p>러닝</p></li>
-                                            <li><p>축구</p></li>
-                                            <li><p>농구</p></li>
-                                            <li><p>트레이닝 & 짐</p></li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                          </div>
+            </div>
+        </div>
+        <div class="clothes">
+            <div class="clothes_wrap">
+                <div class="imganimate_sec"></div>
+                <div class="four_goods">
+                    <div class="four_goods_sec">
+                        <div class="goods_info_another float_left">
+                            <p class="goods_name_another">조던 "Why Not?" ZER0.1</p>
+                            <p class="goods_cost_another">76,300 원</p>                                 
                         </div>
-                       
+                            <div class="float_right">
+                                <img src="img/kids_best/goods1.png" alt="">
+                            </div>  
+                    </div>
+                        <div class="four_goods_sec">
+                            <div class="float_left">
+                                <img src="img/kids_best/goods2.png" alt="">
+                            </div> 
+                        <div class="goods_info_another float_right">   
+                            <p class="goods_name_another">조던 점프맨 플리스 크루 탑 주니어 긴팔 티셔츠</p>
+                            <p class="goods_cost_another">65,000 원</p>                                
+                        </div>
+                    </div>
+                    <div class="four_goods_sec">
+                        <div class="goods_info_another float_left">
+                            <p class="goods_name_another">나이키 스포츠웨어 클럽 플리스 크루 리틀키즈 긴팔 티셔츠</p>
+                            <p class="goods_cost_another">45,000 원</p>                                
+                        </div>
+                            <div class="float_right">
+                                <img src="img/kids_best/goods3.png" alt="">
+                            </div>  
+                    </div>
+                    <div class="four_goods_sec">
+                        <div class="float_left">
+                            <img src="img/kids_best/goods4.png" alt="">
+                        </div>  
+                        <div class="goods_info_another float_right">
+                            <p class="goods_name_another">나이키 다이나모 프리 리틀키즈 신발</p>
+                            <p class="goods_cost_another">69,000 원</p>                                 
+                        </div>
+                    </div>
                 </div>
-               
-                <div class="etc_sec">
+            </div>
+            <div class="clothes_best_sec">
+                <div class="goods_wrap">
+                    <p>이 달의 추천상품</p>
+                        <span>제품더보기 〉</span>
+
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/clothes01.jpg" class="caption_rel" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 다운필 패션 후디 재킷</p>
+                            <p class="goods_cost">리틀키즈 후디 재킷 (4-7세)</p>
+                            <p class="goods_cost">169,000 원</p>
+                        </div>
+                        
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/clothes02.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 스포츠웨어 테크 플리스 에센셜 풀집 후디</p>
+                            <p class="goods_cost">주니어 후드 풀 집 탑 (8-13세)</p>
+                            <p class="goods_cost">99,000 원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/clothes03.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">점프맨 플리스 후디 (1-4세)</p>
+                            <p class="goods_cost">베이비 긴팔 티셔츠 (3-36개월)</p>
+                            <p class="goods_cost">65,000 원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec right_zero">
+                            <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/clothes04.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">조던 점프맨 플리스 팬츠</p>
+                            <p class="goods_cost">주니어 팬츠 (8-13세)</p>
+                            <p class="goods_cost">55,000  원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/clothes05.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 스포츠웨어 셰르파 윈드러너 재킷</p>
+                            <p class="goods_cost">주니어 재킷 (8-13세)</p>
+                            <p class="goods_cost">89,000 원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/clothes06.jpg" alt="">
+                            <div class="goods_info">
+                            <p class="goods_name">나이키 스포츠웨어 클럽 플리스 크루</p>
+                            <p class="goods_cost">리틀키즈 후디 긴팔 티셔츠 (4-7세)</p>
+                            <p class="goods_cost">45,000 원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/clothes07.jpg" alt="">
+                            <div class="goods_info">
+                            <p class="goods_name">나이키 스포츠웨어 퓨추라 플리스 후디</p>
+                            <p class="goods_cost">리틀키즈 후디 긴팔 탑 (4-7세)</p>
+                            <p class="goods_cost">45,000 원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec right_zero">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/clothes08.jpg" alt="">
+                            <div class="goods_info">
+                            <p class="goods_name">나이키 퓨추라 카모 크루 탑 & 조거 팬츠 세트 (1-4세)</p>
+                            <p class="goods_cost">베이비 세트 (3-36개월)</p>
+                            <p class="goods_cost">69,000  원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="etc_sec_wrap">
+            <img src="img/kids_best/topimg3.png" alt="">
+            <div class="sports_best_sec">
+                <div class="goods_wrap">
+                    <p>이 달의 추천상품</p>
+                    <span>제품더보기 〉</span>
+
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/item01.jpg" class="caption_rel" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 폼 비니</p>
+                            <p class="goods_cost">주니어 모자 (8-13세)</p>
+                            <p class="goods_cost">29,000  원</p>
+                        </div>
+                        
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/item02.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 페더 라이트 캡</p>
+                            <p class="goods_cost">주니어 모자 (8-13세)</p>
+                            <p class="goods_cost">25,000  원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/item03.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 퍼포먼스 쿠션드 크루 삭스</p>
+                            <p class="goods_cost">주니어 양말 (8-13세)</p>
+                            <p class="goods_cost">19,000  원</p>
+                        </div>
+                    </div>
+                    <div class="goods_sec right_zero">
+                        <div class="black"><button class="view_more">구매하기</button></div>
+                        <img src="img/kids_best/item04.jpg" alt="">
+                        <div class="goods_info">
+                            <p class="goods_name">나이키 브라질리아 백팩</p>
+                            <p class="goods_cost">주니어 백팩 (8-13세)</p>
+                            <p class="goods_cost">45,000 원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hoodie_wrap">
+                <img src="img/kids_best/hoodie.png" alt="">
+                <button class="bestsell_btn"><span>자세히 보기</span></button>
+            </div>
+            
+            
+            <div class="etc_sec">
                     <div class="etcbox_wrap">
-                        <div class="etc_box_g">
+                        <div class="etc_box_b">
                             <div class="text_box_kid">
-                                <div class="sports_checklist"><p>나이키 GIRLS <br>스포츠 체크 리스트</p></div>
-                                <div class="list_g">
+                                <div class="sports_checklist"><p>나이키 BOYS <br> 스포츠 체크 리스트</p></div>
+                                <div class="list">
                                     <ul>
                                         <li><p>러닝</p></li>
                                         <li><p>축구</p></li>
@@ -946,11 +798,35 @@
                                 </div>
                             </div> 
                         </div>
-                        </div>
-                         
-                  </div>
-
+                    </div>
+                    
             </div>
+            
+            <div class="etc_sec">
+                <div class="etcbox_wrap">
+                    <div class="etc_box_g">
+                        <div class="text_box_kid">
+                            <div class="sports_checklist"><p>나이키 GIRLS <br>스포츠 체크 리스트</p></div>
+                            <div class="list_g">
+                                <ul>
+                                    <li><p>러닝</p></li>
+                                    <li><p>축구</p></li>
+                                    <li><p>농구</p></li>
+                                    <li><p>트레이닝 & 짐</p></li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                    </div>
+                        
+                </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="news_letter">
+            <span>최신 소식 받아보기</span>
+            <input type="email" placeholder="Enter Email Address"><input type="submit" class="emailsubmit" value="확인">
         </div>
         <div class="footer_ulbox">
             <ul class="footer_ul">
@@ -1008,7 +884,7 @@
                     개인정보보호책임자 : 홍길동
                 </p>
             </div>
-        </div>
-    
+        </div> 
+    </footer> 
 </body>
 </html>
